@@ -7,9 +7,11 @@
     <title>Главная страница</title>
 
     <link rel="stylesheet" href="./css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/lib/fancybox.min.css">
     <link rel="stylesheet" href="./css/main.css">
 
     <script src="./js/lib/tailwind.js"></script>
+    <script src="./js/lib/fancybox.umd.js"></script>
 </head>
 <body>
     <header>
@@ -53,7 +55,7 @@
                             <img src="./image/icon/arrow_header.svg" alt="">
                         </div>
 
-                        <div class="bg-white absolute h-0 truncate max-h-[300px] top-[50px] group-hover:h-[300px] easy-in duration-200">
+                        <div class="bg-white absolute px-[25px] z-10 h-0 truncate max-h-[150px] top-[50px] left-[-25px] group-hover:h-[300px] duration-200">
                             <ul>
                                 <a href="#"><li>Ноябрьск</li></a>
                                 <a href="#"><li>Ноябрьск</li></a>
@@ -65,11 +67,18 @@
                         </div>
                     </div>
                     
-                    <div class="flex">
-                        <input class="m-auto hidden" id="theme-switch" type="radio">
+                    <div class="flex relative">
+                        <input class="m-auto hidden peer/theme" id="theme-switch" type="checkbox">
 
-                        <label for="theme-switch" class="m-auto w-[54px] h-[26px] bg-black">
+                        <label for="theme-switch" class="m-auto w-[54px] h-[26px] rounded-[50px] bg-black peer-checked/theme:bg-amber-300 duration-200"></label>
+                        <label for="theme-switch" class="w-[22px] h-[22px] rounded-[50%] bg-white absolute top-[50%] translate-y-[-50%] left-[2px] peer-checked/theme:left-[29px] duration-200"></label>
 
+                        <label for="theme-switch" class="absolute top-[50%] translate-y-[-50%] right-[6px] opacity-100 peer-checked/theme:opacity-0 duration-200">
+                            <img class="" src="./image/icon/dark_theme.svg" alt="">
+                        </label>
+
+                        <label for="theme-switch" class="absolute top-[50%] translate-y-[-50%] left-[6px] opacity-0 peer-checked/theme:opacity-100 duration-200">
+                            <img class="" src="./image/icon/light_theme.svg" alt="">
                         </label>
                     </div>
                     
@@ -85,8 +94,432 @@
         </div>
     </header>
 
+    <section class="news mt-[11px]">
+        <div class="container flex gap-[40px]">
+            <div class="flex flex-wrap justify-start align-start w-[75%] gap-[32px]">
+                <div class="relative w-[100%] max-h-[460px]">
+                    <img class="w-[100%] h-[100%] object-cover" src="./image/img/news/bg-1.png" alt="">
+
+                    <div class="bg-gradient-to-r from-[#070707b3] to-transparent absolute h-[100%] w-[100%] bottom-0">
+                        <div class="flex gap-[12px] absolute bottom-[32px] left-[28px] flex-wrap">
+                            <div class="py-[3px] px-[12px] text-white uppercase bg-[#999] text-[12px] font-medium">Общество</div>
+                            
+                            <div class="w-[100%]">
+                                <h2 class="w-[60%] text-white text-[32px] font-semibold">
+                                    «Связь поколений»: ямальская мастерица приглашает северян на выставку традиционных изделий
+                                </h2>
+                            </div>
+
+                            <div class="w-[100%]">
+                                <div class="text-[#dedede] font-[13px] font-normal">
+                                    05 сентября 11:00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative w-[100%] max-h-[460px]">
+                    <img class="w-[100%] h-[100%] object-cover" src="./image/img/news/bg-2.png" alt="">
+
+                    <div class="bg-gradient-to-r from-[#070707b3] to-transparent absolute h-[100%] w-[100%] bottom-0">
+                        <div class="flex gap-[12px] absolute bottom-[32px] left-[28px] flex-wrap">
+                            <div class="py-[3px] px-[12px] text-white uppercase bg-[#063] text-[12px] font-medium">Экономика</div>
+                            
+                            <div class="w-[100%]">
+                                <h2 class="w-[60%] text-white text-[32px] font-semibold">
+                                    Нефтяники начнут использовать агродроны для посева культур на удаленных участках тундры
+                                </h2>
+                            </div>
+
+                            <div class="w-[100%]">
+                                <div class="text-[#dedede] font-[13px] font-normal">
+                                    05 сентября 11:00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative w-[100%] max-h-[460px]">
+                    <img class="w-[100%] h-[100%] object-cover" src="./image/img/news/bg-3.png" alt="">
+
+                    <div class="bg-gradient-to-r from-[#070707b3] to-transparent absolute h-[100%] w-[100%] bottom-0">
+                        <div class="flex gap-[12px] absolute bottom-[32px] left-[28px] flex-wrap">
+                            <div class="py-[3px] px-[12px] text-white uppercase bg-[#036] text-[12px] font-medium">Политика</div>
+                            
+                            <div class="w-[100%]">
+                                <h2 class="w-[60%] text-white text-[32px] font-semibold">
+                                    Правительство ЯНАО выделило Губкинскому 67 млн рублей на помещения для муниципалитета
+                                </h2>
+                            </div>
+
+                            <div class="w-[100%]">
+                                <div class="text-[#dedede] font-[13px] font-normal">
+                                    05 сентября 11:00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="./image/img/news/bg-4.png" data-fancybox data-caption="Caption #1" class="relative w-[48.5%] max-h-[460px]">
+                    <img class="w-[100%] h-[100%] object-cover" src="./image/img/news/bg-4.png" alt="">
+
+                    <div class="bg-gradient-to-r from-[#070707b3] to-transparent absolute h-[100%] w-[100%] bottom-0">
+                        <div class="absolute top-[20px] right-[20px]">
+                            <img src="./image/icon/play.svg" alt="">
+                        </div>
+
+                        <div class="flex gap-[12px] absolute bottom-[32px] left-[28px] flex-wrap">
+                            <div class="py-[3px] px-[12px] text-white uppercase bg-[#ff6600f5] text-[12px] font-medium">Спорт</div>
+                            
+                            <div class="w-[100%]">
+                                <h2 class="w-[60%] text-white text-[22px] font-semibold">
+                                    Помогающие практики: на Ямале скоро появятся иппотерапевты
+                                </h2>
+                            </div>
+
+                            <div class="w-[100%]">
+                                <div class="text-[#dedede] font-[13px] font-normal">
+                                    05 сентября 11:00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <div href="./image/img/news/bg-5.png" data-fancybox data-caption="Caption #1" class="relative w-[48.5%] max-h-[460px]">
+                    <img class="w-[100%] h-[100%] object-cover" src="./image/img/news/bg-5.png" alt="">
+
+                    <div class="bg-gradient-to-r from-[#070707b3] to-transparent absolute h-[100%] w-[100%] bottom-0">
+                        <div class="flex gap-[12px] absolute bottom-[32px] left-[28px] flex-wrap">
+                            <div class="py-[3px] px-[12px] text-white uppercase bg-[#806B2A] text-[12px] font-medium">Строительство</div>
+                            
+                            <div class="w-[100%]">
+                                <h2 class="w-[60%] text-white text-[22px] font-semibold">
+                                    В ЯНАО стартовала ежегодная викторина «Уютный Ямал»
+                                </h2>
+                            </div>
+
+                            <div class="w-[100%]">
+                                <div class="text-[#dedede] font-[13px] font-normal">
+                                    05 сентября 11:00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative w-[48.5%] max-h-[460px]">
+                    <img class="w-[100%] h-[100%] object-cover" src="./image/img/news/bg-6.png" alt="">
+
+                    <div class="bg-gradient-to-r from-[#070707b3] to-transparent absolute h-[100%] w-[100%] bottom-0">
+                        <div class="flex gap-[12px] absolute bottom-[32px] left-[28px] flex-wrap">
+                            <div class="py-[3px] px-[12px] text-white uppercase bg-[#063] text-[12px] font-medium">Экономика</div>
+                            
+                            <div class="w-[100%]">
+                                <h2 class="w-[60%] text-white text-[22px] font-semibold">
+                                    Соль, яблоки и подсолнечное масло выросли в цене в Мурманской области
+                                </h2>
+                            </div>
+
+                            <div class="w-[100%]">
+                                <div class="text-[#dedede] font-[13px] font-normal">
+                                    05 сентября 11:00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="./image/img/news/bg-7.png" data-fancybox data-caption="Caption #2" class="relative w-[48.5%] max-h-[460px]">
+                    <img class="w-[100%] h-[100%] object-cover" src="./image/img/news/bg-7.png" alt="">
+
+                    <div class="bg-gradient-to-r from-[#070707b3] to-transparent absolute h-[100%] w-[100%] bottom-0">
+                        <div class="absolute top-[20px] right-[20px]">
+                            <img src="./image/icon/play.svg" alt="">
+                        </div>
+
+                        <div class="flex gap-[12px] absolute bottom-[32px] left-[28px] flex-wrap">
+                            <div class="py-[3px] px-[12px] text-white uppercase bg-[#605CA8] text-[12px] font-medium">образование</div>
+                            
+                            <div class="w-[100%]">
+                                <h2 class="w-[60%] text-white text-[22px] font-semibold">
+                                    Новую школу на Уктусе откроют в сентябре 2024 года
+                                </h2>
+                            </div>
+
+                            <div class="w-[100%]">
+                                <div class="text-[#dedede] font-[13px] font-normal">
+                                    05 сентября 11:00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="flex w-[21%] flex-col gap-[32px]">
+                <div class="relative bg-[#232323] pb-[42px]">
+                    <div class="flex gap-[6px] ml-[14px] my-[12px]">
+                        <div class="m-auto mx-0 w-[6px] h-[6px] bg-[#E3120E] rounded-[50%]"></div>
+                        <div class="m-auto mx-0 text-white">Прямой эфир</div>
+                    </div>
+
+                    <a class="relative aspect-video overflow-hidden" href="./image/img/nav_video.png" data-fancybox data-caption="3">
+                        <img class="w-[100%]" src="./image/img/nav_video.png" alt="">
+                        <img class="absolute left-[50%] top-[50%] translate-y-[-50%] translate-x-[-50%]" src="./image/icon/play_blue.svg" alt="">
+                    </a>
+                </div>
+
+                <div class="">
+                    <h3 class="text-[24px] font-semibold uppercase">Новости</h3>
+
+                    <div class="flex flex-wrap gap-[10px] my-[20px]">
+                        <div class="w-[48.4%]">
+                            <input class="hidden peer/news-region-russia" type="radio" id="news-region-russia" name="news-region" checked>
+
+                            <label for="news-region-russia" class="w-[100%] cursor-pointer text-black text-center py-[7px] font-medium text-[15px] bg-[#F1F3F4] peer-checked/news-region-russia:bg-[#E3120E] peer-checked/news-region-russia:text-white duration-200">
+                                Россия
+                            </label>
+                        </div>
+
+                        <div class="w-[48.4%]">
+                            <input class="hidden peer/news-region-yamal" type="radio" id="news-region-yamal" name="news-region">
+
+                            <label for="news-region-yamal" class="w-[100%] cursor-pointer text-black text-center py-[7px] font-medium text-[15px] bg-[#F1F3F4] peer-checked/news-region-yamal:bg-[#E3120E] peer-checked/news-region-yamal:text-white duration-200">
+                                Ямал
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div data-tabs="news-region-russia" data-name="news-region">
+                        <div class="flex flex-wrap">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#FF6600F6] text-white">
+                                Спорт
+                            </div>
+
+                            <div class="font-medium text-[15px] mt-[8px]">
+                                Школьница из Сеяхи отправилась в Калужскую область в крупнейшую военно-поисковую экспедицию
+                            </div>
+
+                            <div class="flex gap-[6px] mt-[8px]">
+                                <img src="./image/icon/play_opacity.svg" alt="">
+                                
+                                <div class="font-normal font-[13px] text-[#999999]">06.09.23 в 14:15</div>
+                            </div>
+                        </div>
+
+                        <hr class="my-[14px]">
+
+                        <div class="flex flex-wrap">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#006633] text-white">
+                                Экономика
+                            </div>
+
+                            <div class="font-medium text-[15px] mt-[8px]">
+                                Певица Лариса Долина выступит в Салехарде
+                            </div>
+
+                            <div class="flex gap-[6px] mt-[8px]">
+                                <img src="./image/icon/play_opacity.svg" alt="">
+                                
+                                <div class="font-normal font-[13px] text-[#999999]">06.09.23 в 14:15</div>
+                            </div>
+                        </div>
+
+                        <hr class="my-[14px]">
+
+                        <div class="flex flex-wrap">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#999999] text-white">
+                                Общество
+                            </div>
+
+                            <div class="font-medium text-[15px] mt-[8px]">
+                                Новый Уренгой купит 15 газомоторных автобусов в кредит
+                            </div>
+
+                            <div class="flex gap-[6px] mt-[8px]">
+                                <img src="./image/icon/play_opacity.svg" alt="">
+                                
+                                <div class="font-normal font-[13px] text-[#999999]">06.09.23 в 14:15</div>
+                            </div>
+                        </div>
+
+                        <hr class="my-[14px]">
+
+                        <div class="flex flex-wrap">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#FF6600F6] text-white">
+                                Спорт
+                            </div>
+
+                            <div class="font-medium text-[15px] mt-[8px]">
+                                На фестивале «Арктическая керамика» покажут эффектный обжиг в японской технике раку
+                            </div>
+
+                            <div class="flex gap-[6px] mt-[8px]">
+                                <img src="./image/icon/play_opacity.svg" alt="">
+                                
+                                <div class="font-normal font-[13px] text-[#999999]">06.09.23 в 14:15</div>
+                            </div>
+                        </div>
+
+                        <hr class="my-[14px]">
+
+                        <div class="flex flex-wrap">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#006633] text-white">
+                                Экономика
+                            </div>
+
+                            <div class="font-medium text-[15px] mt-[8px]">
+                                Губернатор ЯНАО Дмитрий Артюхов поздравил жителей региона с Международным днем коренных народов мира
+                            </div>
+
+                            <div class="flex gap-[6px] mt-[8px]">
+                                <img src="./image/icon/play_opacity.svg" alt="">
+                                
+                                <div class="font-normal font-[13px] text-[#999999]">06.09.23 в 14:15</div>
+                            </div>
+                        </div>
+
+                        <hr class="my-[14px]">
+
+                        <div class="flex flex-wrap">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#660099] text-white">
+                                КУльтура
+                            </div>
+
+                            <div class="font-medium text-[15px] mt-[8px]">
+                                Певица Лариса Долина выступит в Салехарде
+                            </div>
+
+                            <div class="flex gap-[6px] mt-[8px]">
+                                <img src="./image/icon/play_opacity.svg" alt="">
+                                
+                                <div class="font-normal font-[13px] text-[#999999]">06.09.23 в 14:15</div>
+                            </div>
+                        </div>
+
+                        <hr class="my-[14px]">
+
+                        <div class="flex flex-wrap">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#009933] text-white">
+                                Экология
+                            </div>
+
+                            <div class="font-medium text-[15px] mt-[8px]">
+                                Следы медведя заметили возле Нового Уренгоя
+                            </div>
+
+                            <div class="flex gap-[6px] mt-[8px]">
+                                <img src="./image/icon/play_opacity.svg" alt="">
+                                
+                                <div class="font-normal font-[13px] text-[#999999]">06.09.23 в 14:15</div>
+                            </div>
+                        </div>
+
+                        <hr class="my-[14px]">
+
+                        <div class="flex flex-wrap">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#999999] text-white">
+                                Общество
+                            </div>
+
+                            <div class="font-medium text-[15px] mt-[8px]">
+                                Вклад в будущее: «Газпромнефть-Аэро» готовит специалистов для авиатопливной отрасли
+                            </div>
+
+                            <div class="flex gap-[6px] mt-[8px]">
+                                <img src="./image/icon/play_opacity.svg" alt="">
+                                
+                                <div class="font-normal font-[13px] text-[#999999]">06.09.23 в 14:15</div>
+                            </div>
+                        </div>
+
+                        <hr class="my-[14px]">
+
+                        <div class="flex flex-wrap">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#999999] text-white">
+                                Общество
+                            </div>
+
+                            <div class="font-medium text-[15px] mt-[8px]">
+                                Новый Уренгой купит 15 газомоторных автобусов в кредит
+                            </div>
+
+                            <div class="flex gap-[6px] mt-[8px]">
+                                <img src="./image/icon/play_opacity.svg" alt="">
+                                
+                                <div class="font-normal font-[13px] text-[#999999]">06.09.23 в 14:15</div>
+                            </div>
+                        </div>
+
+                        <hr class="my-[14px]">
+
+                        <div class="flex flex-wrap">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#009933] text-white">
+                                Экология
+                            </div>
+
+                            <div class="font-medium text-[15px] mt-[8px]">
+                                Следы медведя заметили возле Нового Уренгоя
+                            </div>
+
+                            <div class="flex gap-[6px] mt-[8px]">
+                                <img src="./image/icon/play_opacity.svg" alt="">
+                                
+                                <div class="font-normal font-[13px] text-[#999999]">06.09.23 в 14:15</div>
+                            </div>
+                        </div>
+
+                        <hr class="my-[14px]">
+
+                        <div class="flex flex-wrap">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#006633] text-white">
+                                Экономика
+                            </div>
+
+                            <div class="font-medium text-[15px] mt-[8px]">
+                                Губернатор ЯНАО Дмитрий Артюхов поздравил жителей региона с Международным днем коренных народов мира
+                            </div>
+
+                            <div class="flex gap-[6px] mt-[8px]">
+                                <img src="./image/icon/play_opacity.svg" alt="">
+                                
+                                <div class="font-normal font-[13px] text-[#999999]">06.09.23 в 14:15</div>
+                            </div>
+                        </div>
+
+                        <hr class="my-[14px]">
+
+                        <div class="flex flex-wrap">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#FF6600F6] text-white">
+                                Спорт
+                            </div>
+
+                            <div class="font-medium text-[15px] mt-[8px]">
+                                На фестивале «Арктическая керамика» покажут эффектный обжиг в японской технике раку
+                            </div>
+
+                            <div class="flex gap-[6px] mt-[8px]">
+                                <img src="./image/icon/play_opacity.svg" alt="">
+                                
+                                <div class="font-normal font-[13px] text-[#999999]">06.09.23 в 14:15</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-tabs="news-region-yamal" data-name="news-region"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
 
     </footer>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>
