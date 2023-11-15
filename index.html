@@ -8,10 +8,14 @@
 
     <link rel="stylesheet" href="./css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="./css/lib/fancybox.min.css">
+    <link rel="stylesheet" href="./css/lib/swiper-bundle.min.css">
+
     <link rel="stylesheet" href="./css/main.css">
+
 
     <script src="./js/lib/tailwind.js"></script>
     <script src="./js/lib/fancybox.umd.js"></script>
+    <script src="./js/lib/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header>
@@ -94,7 +98,7 @@
         </div>
     </header>
 
-    <section class="news mt-[11px]">
+    <section class="mt-[11px]">
         <div class="container flex gap-[40px]">
             <div class="flex flex-wrap justify-start align-start w-[75%] gap-[32px]">
                 <div class="relative w-[100%] max-h-[460px]">
@@ -726,6 +730,38 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#232323] mt-[60px] py-[60px]">
+        <div class="container">
+            <div class="mb-[32px]">
+                <span class="py-[6px] px-[16px] text-white bg-[#E3120E] uppercase font-semibold text-[24px]">Спецпроекты</span>
+            </div>
+
+            <div class="swiper swiper_projects">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide aspect-video overflow-hidden w-[75%]">
+                        <img class="w-[100%]" src="./image/img/projects/bg-1.png" alt="">
+                        <div class=""></div>
+
+                        <div class="">
+                            Нефтяники начнут использовать агродроны для посева культур на удаленных участках тундры
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                    </div>
+                  </div>
+
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
             </div>
         </div>
     </section>

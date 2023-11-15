@@ -1,5 +1,13 @@
 Fancybox.bind("[data-fancybox]", {});
 
+const swiperProjects = new Swiper('.swiper_projects', {
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
 
 class Tabs {
     constructor (name) {
