@@ -8,6 +8,12 @@ const swiperProjects = new Swiper('.swiper_projects', {
     },
 });
 
+const swiperNews24 = new Swiper('.swiper_news24', {
+    slidesPerView: 6,
+    freeMode: true,
+    // spaceBetween: 20,
+});
+
 
 class Tabs {
     constructor (name) {
