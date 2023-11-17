@@ -1,17 +1,39 @@
 Fancybox.bind("[data-fancybox]", {});
 
 const swiperProjects = new Swiper('.swiper_projects', {
-    loop: true,
+    effect: "coverflow",
+    grabCursor: true,
+    slidesPerView: "auto",
+    centeredSlides: true,
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 370,
+        depth: -300,
+        modifier: 1,
+        slideShadows: true,
+        scale: 0.6,
+    },
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+    allowTouchMove: false,
 });
 
 const swiperNews24 = new Swiper('.swiper_news24', {
     slidesPerView: 6,
     freeMode: true,
-    // spaceBetween: 20,
+    loop: true,
+});
+
+const swiperVideo = new Swiper('.swiper_video', {
+    slidesPerView: 5,
+    freeMode: true,
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 });
 
 
