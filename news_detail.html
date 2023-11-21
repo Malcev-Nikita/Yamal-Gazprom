@@ -5,8 +5,616 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Внутренняя страница новости</title>
+
+    <link rel="stylesheet" href="./css/lib/fancybox.min.css">
+    <link rel="stylesheet" href="./css/lib/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="./css/main.css">
+
+
+    <script src="./js/lib/tailwind.js"></script>
+    <script src="./js/lib/fancybox.umd.js"></script>
+    <script src="./js/lib/swiper-bundle.min.js"></script>
 </head>
 <body>
+    <header>
+        <div class="h-[250px]" style="background: url('./image/img/header_bg.png') no-repeat;">
+            <div class="container m-auto pt-[50px]">
+                <img class="w-[282px] h-[135px]" src="./image/icon/logo.svg" alt="">
+            </div>
+        </div>
+
+        <div class="container m-auto">
+            <div class="grid grid-cols-3 header__bottom py-[42px] align-middle">
+                <nav class="flex">
+                    <ul class="flex gap-[24px] uppercase font-medium">
+                        <a class="m-auto" href="#"><li>Смотреть</li></a>
+                        <a class="m-auto" href="#"><li>Слушать</li></a>
+                        <a class="m-auto" href="#"><li>читать</li></a>
+                    </ul>
+                </nav>
+
+                <div class="flex justify-center justify-middle">
+                    <img src="./image/icon/header_logo.svg" alt="">
+                </div>
+
+                <div class="flex justify-end gap-[20px]">
+                    <div class="flex align-middle gap-[8px]">
+                        <div class="m-auto">
+                            <img src="./image/icon/weather.svg" alt="">
+                        </div>
+
+                        <div class="m-auto font-medium">
+                            14 °C
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-[5px] group relative">
+                        <div class="font-medium m-auto">
+                            Ноябрьск
+                        </div>
+
+                        <div class="m-auto group-hover:rotate-180 duration-200">
+                            <img src="./image/icon/arrow_header.svg" alt="">
+                        </div>
+
+                        <div class="bg-white absolute px-[25px] z-10 h-0 truncate max-h-[150px] top-[50px] left-[-25px] group-hover:h-[300px] duration-200">
+                            <ul>
+                                <a href="#"><li>Ноябрьск</li></a>
+                                <a href="#"><li>Ноябрьск</li></a>
+                                <a href="#"><li>Ноябрьск</li></a>
+                                <a href="#"><li>Ноябрьск</li></a>
+                                <a href="#"><li>Ноябрьск</li></a>
+                                <a href="#"><li>Ноябрьск</li></a>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="flex relative">
+                        <input class="m-auto hidden peer/theme" id="theme-switch" type="checkbox">
+
+                        <label for="theme-switch" class="m-auto w-[54px] h-[26px] rounded-[50px] bg-black peer-checked/theme:bg-amber-300 duration-200"></label>
+                        <label for="theme-switch" class="w-[22px] h-[22px] rounded-[50%] bg-white absolute top-[50%] translate-y-[-50%] left-[2px] peer-checked/theme:left-[29px] duration-200"></label>
+
+                        <label for="theme-switch" class="absolute top-[50%] translate-y-[-50%] right-[6px] opacity-100 peer-checked/theme:opacity-0 duration-200">
+                            <img class="" src="./image/icon/dark_theme.svg" alt="">
+                        </label>
+
+                        <label for="theme-switch" class="absolute top-[50%] translate-y-[-50%] left-[6px] opacity-0 peer-checked/theme:opacity-100 duration-200">
+                            <img class="" src="./image/icon/light_theme.svg" alt="">
+                        </label>
+                    </div>
+                    
+                    <button class="flex">
+                        <img class="m-auto" src="./image/icon/search.svg" alt="">
+                    </button>
+                    
+                    <button class="flex">
+                        <img class="m-auto" src="./image/icon/burger.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container m-auto px-[25%]">
+            <div class="flex gap-[12px]">
+                <span class="bg-[#609] uppercase text-[12px] font-medium px-[12px] py-[3px] text-white">
+                    Культура
+                </span>
+
+                <div class="text-[#999999] text-[14px] font-normal">
+                    2 августа 2023, 10:23
+                </div>
+            </div>
+
+            <div class="text-[#232323] font-semibold text-[38px] leading-[1.1] mt-[14px]">
+                ВС разъяснит детали расчета налога на имущество
+            </div>
+
+            <div class="flex justify-between mt-[16px]">
+                <a href="#" class="flex gap-[8px] bg-[#F1F3F4] px-[16px] py-[8px]">
+                    <img src="./image/icon/comment.svg" alt="">
+
+                    <span>1 комментарий</span>
+                </a>
+
+                <a href="#" class="flex gap-[8px] bg-[#F1F3F4] px-[16px] py-[8px]">
+                    <span>Поделиться</span>
+
+                    <img src="./image/icon/share.svg" alt="">
+                </a>
+            </div>
+
+            <div class="mt-[28px] text-[19px] leading-[1.4] font-normal">
+                Верховный суд РФ (ВС) решит, может ли бизнес не относить к офисным помещения, которые используются для размещения персонала и не сдаются с целью получения прибыли. Это важно для расчета налога на имущество, льготу по которому можно получить, если объект имеет не офисно-торговое назначение. Прецедентное для бизнеса решение будет вынесено в рамках спора Сбербанка с властями Москвы. Юристы говорят, что ВС может пересмотреть существующий в практике подход и тогда многие предприятия лишатся льгот.
+            </div>
+        </div>
+
+        <div class="container m-auto my-[40px] px-[20%] relative">
+            <a href="./image/img/details-1.png" data-fancybox>
+                <img class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]" src="./image/icon/play_blue.svg" alt="">
+                <img src="./image/img/details-1.png" alt="">
+            </a>
+        </div>
+        
+        <div class="container m-auto px-[25%]">
+            <div class="mt-[28px] text-[19px] leading-[1.4] font-normal">
+                ВС рассмотрит спор о том, как определить назначение недвижимого имущества организации. Дело имеет важное значение, так как влияет на налогообложение.
+            </div>
+
+            <hr class="mt-[32px]">
+
+            <div class="relative my-[24px] flex w-[100%] justify-between align-middle gap-[24px]">
+                <img class="absolute top-0 right-0 w-[30px] h-[30px]" src="./image/icon/play_opacity.svg" alt="">
+
+                <div class="m-auto mx-0">
+                    <img class="w-[180px] max-w-[180px] h-[120px] object-cover" src="./image/img/news/bg-15.png" alt="">
+                </div>
+
+                <div class="">
+                    <div class="text-[13px] font-medium flex gap-[4px]">
+                        <div class="text-[#E3120E]">
+                            Спорт
+                        </div>
+
+                        <div class="w-[4px] h-[4px] rounded-[50%] bg-[#E3120E] opacity-50 m-auto mx-0"></div>
+
+                        <div class="text-[#999999]">
+                            Общество
+                        </div>
+                    </div>
+
+                    <div class="mt-[6px] text-[#232323] font-medium text-[18px] leading-[1.1] w-[90%]">
+                        Чемпион мира по горным лыжам Мошкин похвалил спортивные условия для ямальских детей
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mb-[32px]">
+
+            <div class="mt-[28px] text-[19px] leading-[1.4] font-normal">
+                ВС рассмотрит спор о том, как определить назначение недвижимого имущества организации. Дело имеет важное значение, так как влияет на налогообложение.
+                <br><br>
+                Ставка налога на имущество организаций находится в пределах 2–2,2%, но главный вопрос — от какой стоимости его считать. Дороже всего обходятся объекты недвижимости, предназначенные под офисы, торговые помещения или общепит, поскольку предполагается, что собственник получает прибыль. Для них Налоговый кодекс РФ (НК) предусматривает расчет от кадастровой стоимости, близкой к рыночной. Для остальных объектов (в основном производственные площади и склады) налог считается от среднегодовой стоимости, которая, как правило, меньше кадастровой в разы, поскольку основана на остаточной стоимости имущества.
+                <br><br>
+                Каждый регион, исходя из назначения помещения или здания, ежегодно составляет перечень объектов недвижимости, облагаемых налогом от кадастровой стоимости.
+                <br><br>
+
+                <div class="flex gap-[18px] relative">
+                    <div class="w-[2px] h-[100%] bg-[#232323] absolute"></div>
+                    <div class="font-bold pl-[18px] py-[10px]">
+                        Мой любимый предмет — история! История — это мифы, легенды, царские перевороты. Все это — приключения, ни один урок мне не казался скучным, я целиком погружалась в событие. И, конечно, спасибо педагогу, который умело доносил информацию, — вспоминает о школьных годах координатор волонтеров-медиков на Ямале Милана Зандукаева.
+                    </div>
+                </div>
+
+                <br>
+                История. Без знания истории собственного народа и человечества в целом немыслимо формирование и развитие личности, кругозора, восприятия мира, — добавил руководитель Ямальского центра общественного здоровья Сергей Токарев.
+                <br><br>
+                Интересно отметить, что традиция начинать учебный год именно 1 сентября появилась примерно в 1930-ых годах, а праздник ввели только в 1984 году.
+            </div>
+        </div>
+
+        <div class="container m-auto my-[40px] px-[20%] relative">
+            <a href="./image/img/details-2.png" data-fancybox>
+                <img src="./image/img/details-2.png" alt="">
+            </a>
+        </div>
+
+        <div class="container m-auto px-[25%]">
+            <div class="mt-[28px] text-[19px] leading-[1.4] font-normal">
+                — Когда мы погружаемся в историю, мы видим, что каждый шаг, каждое принятое решение имело значение и привело к определенным последствиям. Мы учимся на ошибках и успехах тех, кто шел перед нами, и можем применить эту мудрость в нашей жизни сегодня, — пояснил Максим Зинин.
+                <br><br>
+                Особенно нравились труды. Теперь этот предмет называется технология. Всегда любил работать руками, мастерить. Полученные навыки помогают вести хозяйство. Держим с супругой большой огород, который требует постоянного внимания, — поделился с журналистами председатель Заксобрания ЯНАО Сергей Ямкин.
+                <br><br>
+                Я любил обществознание. Просто хотелось понимать, как выглядит структура взрослого общества, какие имеются правила и законы. Чтобы в будущем занять в этом мире лучшее место, правильно позиционировать себя с точки зрения ценностей, — отметил для «Ямал 1» писатель.
+            </div>
+        </div>
+
+        <div class="container m-auto px-[25%] mt-[32px] flex gap-[14px]">
+            <div class="h-[52px] w-[52px] rounded-[50%] overflow-hidden">
+                <img src="./image/avatar-1.png" alt="">
+            </div>
+
+            <div class="text-[15px] m-auto mx-0">
+                <div class="font-semibold text-[#232323]">Константинов Роман </div>
+                <div class="font-normal text-[#999]">Старший корреспондент</div>
+            </div>
+        </div>
+
+        <div class="container m-auto px-[25%] mt-[35px] flex gap-[6px] flex-wrap">
+            <div class="text-[#999] bg-[#F1F3F4] px-[16px] py-[6px]">Ямал</div>
+            <div class="text-[#999] bg-[#F1F3F4] px-[16px] py-[6px]">Выставки</div>
+            <div class="text-[#999] bg-[#F1F3F4] px-[16px] py-[6px]">Арктика</div>
+            <div class="text-[#999] bg-[#F1F3F4] px-[16px] py-[6px]">Экология</div>
+        </div>
+
+        <div class="container m-auto px-[25%] mt-[20px] text-[14px] font-normal text-[#666]">
+            Увидели опечатку или ошибку в тексте? Выделите фрагмент и нажмите Ctrl+Enter
+        </div>
+
+        <div class="container m-auto px-[25%] mt-[32px]">
+            <div class="shadow-[0_6px_24px_-4px_rgba(0,0,0,0.12)] p-[20px] flex gap-[20px]">
+                <div class="text-[#232323] text-[16px] font-normal leading-[1.1]">
+                    Неудобно на сайте? Читайте самое интересное в Telegram и самое полезное в VK
+                </div>
     
+                <div class="flex gap-[4px]">
+                    <a href="#" class="bg-[#D6F1FF] w-[100px] h-[100%] flex justify-center align-middle">
+                        <img class="w-[24px]" src="./image/icon/tg.svg" alt="">
+                    </a>
+
+                    <a href="#" class="bg-[#D6F1FF] w-[100px] h-[100%] flex justify-center align-middle">
+                        <img class="w-[24px]" src="./image/icon/vk.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container m-auto px-[25%] mt-[60px]">
+            <div class="text-[20px] font-normal flex gap-[10px] align-middle">
+                <div>Комментарии</div>
+                <img src="./image/icon/comment.svg" alt="">
+                <div>1</div>
+            </div>
+
+            <div class="mt-[22px]">
+                <textarea class="border-[1px] border-[#ccc] w-[100%] px-[14px] py-[12px]" placeholder="Написать комментарий.." name="comment" id="comment" cols="30" rows="4"></textarea>
+            </div>
+
+            <div class="text-[#999] text-[14px] font-normal">
+                Комментарии проходят модерацию <a href="#" class="underline">по правилам издания</a>
+            </div>
+
+            <div class="mt-[32px]">
+                <div class="flex gap-[10px] my-[16px]">
+                    <div class="w-[40px] min-w-[40px] h-[40px] overflow-hidden rounded-[50%]">
+                        <img src="./image/avatar-2.png" alt="">
+                    </div>
+
+                    <div>
+                        <div class="flex gap-[8px]">
+                            <div class="m-auto mx-0 text-[16px] font-medium text-[#232323]">Дивес</div>
+                            <div class="m-auto mx-0 text-[14px] font-normal text-[#999]">21 августа, 09:08</div>
+                        </div>
+
+                        <div class="mt-[8px] text-[16px] font-normal text-[#232323] leading-[1.1]">
+                            Матвей Шпаро и два его товарища уезжают из России в ноябре месяце в Антарктиду. Они собираются дойти от побережья до Южного полюса командой, в которой будет два человека на лыжах
+                        </div>
+
+                        <button class="mt-[12px] text-[14px] font-normal text-[#999]">
+                            Ответить
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-[50px] mb-[50px]">
+        <div class="container m-auto">
+            <div class="w-[100%] mb-[24px]">
+                <span class="uppercase font-semibold text-[24px]">Читайте также</span>
+            </div>
+
+            <div class="flex flex-wrap gap-[40px]">
+                <div class="w-[calc(33.3%-40px)]">
+                    <div class="mb-[14px]">
+                        <span class="py-[3px] px-[12px] uppercase text-[12px] font-medium text-white bg-[#ff6600f5]">
+                            Спорт
+                        </span>
+                    </div>
+    
+                    <a class="w-[100%] relative aspect-video" href="./image/img/news/bg-15.png" data-fancybox>
+                        <img class="w-[100%] object-cover" src="./image/img/news/bg-15.png" alt="">
+                    </a>
+    
+                    <h4 class="mt-[14px] text-[20px] font-semibold leading-[26px]">
+                        Выставка «Ямал. Тепло Арктики» познакомит жителей Тюмени и Петербурга с культурой Севера
+                    </h4>
+    
+                    <div class="text-[#999] text-[13px] font-normal mt-[8px]">
+                        05 сентября 11:00
+                    </div>
+                </div>
+    
+                <div class="w-[calc(33.3%-40px)]">
+                    <div class="mb-[14px]">
+                        <span class="py-[3px] px-[12px] uppercase text-[12px] font-medium text-white bg-[#999]">
+                            Общество
+                        </span>
+                    </div>
+    
+                    <a class="w-[100%] relative aspect-video" href="./image/img/news/bg-16.png" data-fancybox>
+                        <img class="absolute top-[20px] right-[20px] w-[44px] h-[44px]" src="./image/icon/play.svg" alt="">
+                        <img class="w-[100%] object-cover" src="./image/img/news/bg-16.png" alt="">
+                    </a>
+    
+                    <h4 class="mt-[14px] text-[20px] font-semibold leading-[26px]">
+                        Дороги, жилье и здравоохранение: о чем губернатору пишут перед его поездкой по Ямалу
+                    </h4>
+    
+                    <div class="text-[#999] text-[13px] font-normal mt-[8px]">
+                        05 сентября 11:00
+                    </div>
+                </div>
+    
+                <div class="w-[calc(33.3%-40px)]">
+                    <div class="mb-[14px]">
+                        <span class="py-[3px] px-[12px] uppercase text-[12px] font-medium text-white bg-[#999]">
+                            Общество
+                        </span>
+                    </div>
+    
+                    <a class="w-[100%] relative aspect-video" href="./image/img/news/bg-17.png" data-fancybox>
+                        <img class="absolute top-[20px] right-[20px] w-[44px] h-[44px]" src="./image/icon/play.svg" alt="">
+                        <img class="w-[100%] object-cover" src="./image/img/news/bg-17.png" alt="">
+                    </a>
+    
+                    <h4 class="mt-[14px] text-[20px] font-semibold leading-[26px]">
+                        Глава Ямала Артюхов 14 августа проведет встречу с жителями Надыма и участниками СВО
+                    </h4>
+    
+                    <div class="text-[#999] text-[13px] font-normal mt-[8px]">
+                        05 сентября 11:00
+                    </div>
+                </div>
+    
+                <div class="w-[calc(33.3%-40px)]">
+                    <div class="mb-[14px]">
+                        <span class="py-[3px] px-[12px] uppercase text-[12px] font-medium text-white bg-[#036]">
+                            Политика
+                        </span>
+                    </div>
+    
+                    <a class="w-[100%] relative aspect-video" href="./image/img/news/bg-18.png" data-fancybox>
+                        <img class="w-[100%] object-cover" src="./image/img/news/bg-18.png" alt="">
+                    </a>
+    
+                    <h4 class="mt-[14px] text-[20px] font-semibold leading-[26px]">
+                        Зарплата главы Салехарда с 1 октября вырастет
+                    </h4>
+    
+                    <div class="text-[#999] text-[13px] font-normal mt-[8px]">
+                        05 сентября 11:00
+                    </div>
+                </div>
+    
+                <div class="w-[calc(33.3%-40px)]">
+                    <div class="mb-[14px]">
+                        <span class="py-[3px] px-[12px] uppercase text-[12px] font-medium text-white bg-[#093]">
+                            Экология
+                        </span>
+                    </div>
+    
+                    <a class="w-[100%] relative aspect-video" href="./image/img/news/bg-19.png" data-fancybox>
+                        <img class="absolute top-[20px] right-[20px] w-[44px] h-[44px]" src="./image/icon/play.svg" alt="">
+                        <img class="w-[100%] object-cover" src="./image/img/news/bg-19.png" alt="">
+                    </a>
+    
+                    <h4 class="mt-[14px] text-[20px] font-semibold leading-[26px]">
+                        Ямальские школьники привезли в Санкт-Петербург трубу нефтепровода
+                    </h4>
+    
+                    <div class="text-[#999] text-[13px] font-normal mt-[8px]">
+                        05 сентября 11:00
+                    </div>
+                </div>
+    
+                <div class="w-[calc(33.3%-40px)]">
+                    <div class="mb-[14px]">
+                        <span class="py-[3px] px-[12px] uppercase text-[12px] font-medium text-white bg-[#609]">
+                            Культура
+                        </span>
+                    </div>
+    
+                    <a class="w-[100%] relative aspect-video" href="./image/img/news/bg-20.png" data-fancybox>
+                        <img class="w-[100%] object-cover" src="./image/img/news/bg-20.png" alt="">
+                    </a>
+    
+                    <h4 class="mt-[14px] text-[20px] font-semibold leading-[26px]">
+                        Строганина и гонки на оленях: наш специальный корреспондент побывала на празднике «Хаерако Соя’ма» в Новом Порту
+                    </h4>
+    
+                    <div class="text-[#999] text-[13px] font-normal mt-[8px]">
+                        05 сентября 11:00
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-[32px] pb-[60px]">
+        <div class="container m-auto">
+            <div class="flex gap-[6px]">
+                <img class="m-auto mx-0" src="./image/icon/smi24.svg" alt="">
+                <p class="m-auto font-semibold text-[18px] mx-0" >24СМИ</p>
+            </div>
+
+            <div class="swiper swiper_news24 mt-[20px]">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]">
+                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-1.png" alt="">
+
+                        <div class="text-[16px] font-medium px-[20px]">
+                            По делу Блиновской арестовали активы на 64 миллиарда рублей
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]">
+                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-2.png" alt="">
+
+                        <div class="text-[16px] font-medium px-[20px]">
+                            В НАТО допустили обмен территорий Украины на членство в альянсе
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]">
+                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-3.png" alt="">
+
+                        <div class="text-[16px] font-medium px-[20px]">
+                            В Грузии освистали группу The Killers за приглашение на сцену барабанщика из России
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]">
+                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-4.png" alt="">
+
+                        <div class="text-[16px] font-medium px-[20px]">
+                            Минобороны: ВС РФ перехватили четыре крылатых ракеты большой дальности SCALP-EG
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]">
+                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-5.png" alt="">
+
+                        <div class="text-[16px] font-medium px-[20px]">
+                            Средства ПВО сбили три беспилотника над Калужской областью
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]">
+                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-6.png" alt="">
+
+                        <div class="text-[16px] font-medium px-[20px]">
+                            Что будет с рублем, вкладами и кредитами после повышения ключевой ставки до 12%
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]">
+                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-6.png" alt="">
+
+                        <div class="text-[16px] font-medium px-[20px]">
+                            Что будет с рублем, вкладами и кредитами после повышения ключевой ставки до 12%
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#232323] py-[40px]">
+        <div class="container m-auto">
+            <div class="flex justify-between">
+                <div class="flex gap-[32px]">
+                    <img src="./image/icon/logo_footer.png" alt="">
+
+                    <ul class="flex gap-[32px] m-auto mx-0">
+                        <a class="text-white" href="#"><li class="uppercase text-[17px] font-medium">Редакция</li></a>
+                        <a class="text-white" href="#"><li class="uppercase text-[17px] font-medium">Вакансии</li></a>
+                        <a class="text-white" href="#"><li class="uppercase text-[17px] font-medium">Реклама</li></a>
+                        <a class="text-white" href="#"><li class="uppercase text-[17px] font-medium">правовая информация</li></a>
+                        <a class="text-[#999]" href="#"><li class="uppercase text-[17px] font-medium">Архив</li></a>
+                    </ul>
+                </div>
+
+                <div class="flex m-auto mx-0">
+                    <ul class="flex gap-[32px]">
+                        <a class="flex gap-[10px]" href="#">
+                            <img src="./image/icon/tg.svg" alt="">
+                            <li class="uppercase text-white text-[17px] font-medium">телеграм</li>
+                        </a>
+
+                        <a class="flex gap-[10px]" href="#">
+                            <img src="./image/icon/vk.svg" alt="">
+                            <li class="uppercase text-white text-[17px] font-medium">ВКонтакте</li>
+                        </a>
+
+                        <a class="flex gap-[10px]" href="#">
+                            <img src="./image/icon/ok.svg" alt="">
+                            <li class="uppercase text-white text-[17px] font-medium">Одноклассники</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-[20px] flex justify-between">
+                <div class="flex gap-[60px]">
+                    <ul class="text-[#dcdcdcf7] text-[17px] font-normal flex flex-col gap-[5px]">
+                        <a href="#"><li>Россия</li></a>
+                        <a href="#"><li>Новый Уренгой</li></a>
+                        <a href="#"><li>Ноябрьск</li></a>
+                        <a href="#"><li>Салехард</li></a>
+                        <a href="#"><li>Надым</li></a>
+                        <a href="#"><li>Губинский</li></a>
+                        <a href="#"><li>Муравленко</li></a>
+                        <a href="#"><li>Лабытнаги</li></a>
+                    </ul>
+
+                    <ul class="text-[#dcdcdcf7] text-[17px] font-normal flex flex-col gap-[5px]">
+                        <a href="#"><li>Красноселькупский район</li></a>
+                        <a href="#"><li>Надымский район</li></a>
+                        <a href="#"><li>Приуральский район</li></a>
+                        <a href="#"><li>Пуровский район</li></a>
+                        <a href="#"><li>Тазовский район</li></a>
+                        <a href="#"><li>Шурышкарский район</li></a>
+                        <a href="#"><li>Ямальский район</li></a>
+                    </ul>
+                </div>
+
+                <div class="flex justify-end gap-[60px] mr-[100px]">
+                    <div class="flex">
+                        <ul class="text-[#999] text-[17px] font-normal flex flex-col gap-[5px]">
+                            <a href="#"><li>Экономика</li></a>
+                            <a href="#"><li>Происшествия</li></a>
+                            <a href="#"><li>Политика</li></a>
+                            <a href="#"><li>Спорт</li></a>
+                            <a href="#"><li>Культура</li></a>
+                            <a href="#"><li>Афиша</li></a>
+                            <a href="#"><li>Общество</li></a>
+                            <a href="#"><li>Образование</li></a>
+                        </ul>
+                    </div>
+    
+                    <div class="flex">
+                        <ul class="text-[#999] text-[17px] font-normal flex flex-col gap-[5px]">
+                            <a href="#"><li>Медицина</li></a>
+                            <a href="#"><li>Погода</li></a>
+                            <a href="#"><li>Экология</li></a>
+                            <a href="#"><li>Транспорт</li></a>
+                            <a href="#"><li>Тэк</li></a>
+                            <a href="#"><li>ЖКХ</li></a>
+                            <a href="#"><li>Строительство</li></a>
+                            <a href="#"><li>СВО</li></a>
+                        </ul>
+                    </div>
+    
+                    <div class="flex">
+                        <ul class="text-[#999] text-[17px] font-normal flex flex-col gap-[5px]">
+                            <a href="#"><li>Спецпроекты</li></a>
+                            <a href="#"><li>Фоторепортажи</li></a>
+                            <a href="#"><li>Видео</li></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-[#666] text-[28px] font-bold text-end">
+                12+
+            </div>
+
+            <div class="text-[#999] mt-[40px] flex justify-between align-middle gap-[20px]">
+                <div class="w-[50%]">
+                    <p>© 2018-2023 Сетевое издание «Ямал1»</p>    
+                    <div class="mt-[32px]"></div>
+                    <p>
+                        Сетевое издание « Ямал 1» зарегистрировано в Федеральной службе по надзору в сфере связи, информационных технологий и массовых коммуникаций (Роскомнадзор) 04 мая 2018 года.
+                        Свидетельство о регистрации ЭЛ №ФС77–72641.
+                    </p>
+                    <div class="my-[12px]"></div>
+                    <p>Учредитель и редакция: ООО «Арктика Медиа». Главный редактор: Абдулин Ильдар Ринатович.</p>
+                </div>
+
+                <div class="w-[50%] mt-[55px]">
+                    <p>
+                        Все права на любые материалы, опубликованные на сайте, защищены в соответствии с российским и международным законодательством об авторском праве и смежных правах. При любом использовании текстовых, аудио-, фото- и видеоматериалов прямая и индексируемая (активная) ссылка на Новостное агентство YAMAL1.RU (YAMAL1.RU ) обязательна.
+                    </p>    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>
