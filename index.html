@@ -17,7 +17,7 @@
     <script src="./js/lib/swiper-bundle.min.js"></script>
 </head>
 <body>
-    <header>
+    <header itemscope itemtype="http://schema.org/Organization">
         <div class="h-[250px]" style="background: url('./image/img/header_bg.png') no-repeat;">
             <div class="container m-auto pt-[50px]">
                 <img class="w-[282px] h-[135px]" src="./image/icon/logo.svg" alt="">
@@ -100,74 +100,74 @@
     <section class="mt-[11px]">
         <div class="container m-auto flex gap-[40px]">
             <div class="flex flex-wrap justify-start align-start w-[75%] gap-[32px]">
-                <div class="relative w-[100%] max-h-[460px]">
-                    <img class="w-[100%] h-[100%] object-cover" src="./image/img/news/bg-1.png" alt="">
+                <div class="relative w-[100%] max-h-[460px]" itemscope itemtype="http://schema.org/NewsArticle">
+                    <img class="w-[100%] h-[100%] object-cover" src="./image/img/news/bg-1.png" alt="" itemprop="image">
 
                     <div class="bg-gradient-to-r from-[#070707b3] to-transparent absolute h-[100%] w-[100%] bottom-0">
                         <div class="flex gap-[12px] absolute bottom-[32px] left-[28px] flex-wrap">
-                            <div class="py-[3px] px-[12px] text-white uppercase bg-[#999] text-[12px] font-medium">Общество</div>
+                            <div class="py-[3px] px-[12px] text-white uppercase bg-[#999] text-[12px] font-medium" itemprop="articleSection">Общество</div>
                             
                             <div class="w-[100%]">
-                                <h2 class="w-[60%] text-white text-[32px] font-semibold">
+                                <h2 class="w-[60%] text-white text-[32px] font-semibold" itemprop="headline">
                                     «Связь поколений»: ямальская мастерица приглашает северян на выставку традиционных изделий
                                 </h2>
                             </div>
 
                             <div class="w-[100%]">
                                 <div class="text-[#dedede] font-[13px] font-normal">
-                                    05 сентября 11:00
+                                    <time itemprop="datePublished" datetime="2023-09-05T11:00:00">05 сентября 11:00</time>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="relative w-[100%] max-h-[460px]">
-                    <img class="w-[100%] h-[100%] object-cover" src="./image/img/news/bg-2.png" alt="">
+                <div class="relative w-[100%] max-h-[460px]" itemscope itemtype="http://schema.org/NewsArticle">
+                    <img class="w-[100%] h-[100%] object-cover" src="./image/img/news/bg-2.png" alt="" itemprop="image">
 
                     <div class="bg-gradient-to-r from-[#070707b3] to-transparent absolute h-[100%] w-[100%] bottom-0">
                         <div class="flex gap-[12px] absolute bottom-[32px] left-[28px] flex-wrap">
-                            <div class="py-[3px] px-[12px] text-white uppercase bg-[#063] text-[12px] font-medium">Экономика</div>
+                            <div class="py-[3px] px-[12px] text-white uppercase bg-[#063] text-[12px] font-medium" itemprop="articleSection">Экономика</div>
                             
                             <div class="w-[100%]">
-                                <h2 class="w-[60%] text-white text-[32px] font-semibold">
+                                <h2 class="w-[60%] text-white text-[32px] font-semibold" itemprop="headline">
                                     Нефтяники начнут использовать агродроны для посева культур на удаленных участках тундры
                                 </h2>
                             </div>
 
                             <div class="w-[100%]">
                                 <div class="text-[#dedede] font-[13px] font-normal">
-                                    05 сентября 11:00
+                                    <time itemprop="datePublished" datetime="2023-09-05T11:00:00">05 сентября 11:00</time>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="relative w-[100%] max-h-[460px]">
-                    <img class="w-[100%] h-[100%] object-cover" src="./image/img/news/bg-3.png" alt="">
+                <div class="relative w-[100%] max-h-[460px]" itemscope itemtype="http://schema.org/NewsArticle">
+                    <img class="w-[100%] h-[100%] object-cover" src="./image/img/news/bg-3.png" alt="" itemprop="image">
 
                     <div class="bg-gradient-to-r from-[#070707b3] to-transparent absolute h-[100%] w-[100%] bottom-0">
                         <div class="flex gap-[12px] absolute bottom-[32px] left-[28px] flex-wrap">
-                            <div class="py-[3px] px-[12px] text-white uppercase bg-[#036] text-[12px] font-medium">Политика</div>
+                            <div class="py-[3px] px-[12px] text-white uppercase bg-[#036] text-[12px] font-medium" itemprop="articleSection">Политика</div>
                             
                             <div class="w-[100%]">
-                                <h2 class="w-[60%] text-white text-[32px] font-semibold">
+                                <h2 class="w-[60%] text-white text-[32px] font-semibold" itemprop="headline">
                                     Правительство ЯНАО выделило Губкинскому 67 млн рублей на помещения для муниципалитета
                                 </h2>
                             </div>
 
                             <div class="w-[100%]">
                                 <div class="text-[#dedede] font-[13px] font-normal">
-                                    05 сентября 11:00
+                                    <time itemprop="datePublished" datetime="2023-09-05T11:00:00">05 сентября 11:00</time>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <a href="./image/img/news/bg-4.png" data-fancybox data-caption="Caption #1" class="relative w-[48.5%] max-h-[460px]">
-                    <img class="w-[100%] h-[100%] object-cover" src="./image/img/news/bg-4.png" alt="">
+                <a href="./image/img/news/bg-4.png" data-fancybox data-caption="Caption #1" class="relative w-[48.5%] max-h-[460px]" itemscope itemtype="http://schema.org/NewsArticle">
+                    <img class="w-[100%] h-[100%] object-cover" src="./image/img/news/bg-4.png" alt="" itemprop="image">
 
                     <div class="bg-gradient-to-r from-[#070707b3] to-transparent absolute h-[100%] w-[100%] bottom-0">
                         <div class="absolute top-[20px] right-[20px]">
@@ -175,69 +175,69 @@
                         </div>
 
                         <div class="flex gap-[12px] absolute bottom-[32px] left-[28px] flex-wrap">
-                            <div class="py-[3px] px-[12px] text-white uppercase bg-[#ff6600f5] text-[12px] font-medium">Спорт</div>
+                            <div class="py-[3px] px-[12px] text-white uppercase bg-[#ff6600f5] text-[12px] font-medium" itemprop="articleSection">Спорт</div>
                             
                             <div class="w-[100%]">
-                                <h2 class="w-[60%] text-white text-[22px] font-semibold">
+                                <h2 class="w-[60%] text-white text-[22px] font-semibold" itemprop="headline">
                                     Помогающие практики: на Ямале скоро появятся иппотерапевты
                                 </h2>
                             </div>
 
                             <div class="w-[100%]">
                                 <div class="text-[#dedede] font-[13px] font-normal">
-                                    05 сентября 11:00
+                                    <time itemprop="datePublished" datetime="2023-09-05T11:00:00">05 сентября 11:00</time>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </a>
 
-                <div href="./image/img/news/bg-5.png" data-fancybox data-caption="Caption #1" class="relative w-[48.5%] max-h-[460px]">
-                    <img class="w-[100%] h-[100%] object-cover" src="./image/img/news/bg-5.png" alt="">
+                <div href="./image/img/news/bg-5.png" data-fancybox data-caption="Caption #1" class="relative w-[48.5%] max-h-[460px]" itemscope itemtype="http://schema.org/NewsArticle">
+                    <img class="w-[100%] h-[100%] object-cover" src="./image/img/news/bg-5.png" alt="" itemprop="image">
 
                     <div class="bg-gradient-to-r from-[#070707b3] to-transparent absolute h-[100%] w-[100%] bottom-0">
                         <div class="flex gap-[12px] absolute bottom-[32px] left-[28px] flex-wrap">
-                            <div class="py-[3px] px-[12px] text-white uppercase bg-[#806B2A] text-[12px] font-medium">Строительство</div>
+                            <div class="py-[3px] px-[12px] text-white uppercase bg-[#806B2A] text-[12px] font-medium" itemprop="articleSection">Строительство</div>
                             
                             <div class="w-[100%]">
-                                <h2 class="w-[60%] text-white text-[22px] font-semibold">
+                                <h2 class="w-[60%] text-white text-[22px] font-semibold" itemprop="headline">
                                     В ЯНАО стартовала ежегодная викторина «Уютный Ямал»
                                 </h2>
                             </div>
 
                             <div class="w-[100%]">
                                 <div class="text-[#dedede] font-[13px] font-normal">
-                                    05 сентября 11:00
+                                    <time itemprop="datePublished" datetime="2023-09-05T11:00:00">05 сентября 11:00</time>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="relative w-[48.5%] max-h-[460px]">
-                    <img class="w-[100%] h-[100%] object-cover" src="./image/img/news/bg-6.png" alt="">
+                <div class="relative w-[48.5%] max-h-[460px]" itemscope itemtype="http://schema.org/NewsArticle">
+                    <img class="w-[100%] h-[100%] object-cover" src="./image/img/news/bg-6.png" alt="" itemprop="image">
 
                     <div class="bg-gradient-to-r from-[#070707b3] to-transparent absolute h-[100%] w-[100%] bottom-0">
                         <div class="flex gap-[12px] absolute bottom-[32px] left-[28px] flex-wrap">
-                            <div class="py-[3px] px-[12px] text-white uppercase bg-[#063] text-[12px] font-medium">Экономика</div>
+                            <div class="py-[3px] px-[12px] text-white uppercase bg-[#063] text-[12px] font-medium" itemprop="articleSection">Экономика</div>
                             
                             <div class="w-[100%]">
-                                <h2 class="w-[60%] text-white text-[22px] font-semibold">
+                                <h2 class="w-[60%] text-white text-[22px] font-semibold" itemprop="headline">
                                     Соль, яблоки и подсолнечное масло выросли в цене в Мурманской области
                                 </h2>
                             </div>
 
                             <div class="w-[100%]">
                                 <div class="text-[#dedede] font-[13px] font-normal">
-                                    05 сентября 11:00
+                                    <time itemprop="datePublished" datetime="2023-09-05T11:00:00">05 сентября 11:00</time>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <a href="./image/img/news/bg-7.png" data-fancybox data-caption="Caption #2" class="relative w-[48.5%] max-h-[460px]">
-                    <img class="w-[100%] h-[100%] object-cover" src="./image/img/news/bg-7.png" alt="">
+                <a href="./image/img/news/bg-7.png" data-fancybox data-caption="Caption #2" class="relative w-[48.5%] max-h-[460px]" itemscope itemtype="http://schema.org/NewsArticle">
+                    <img class="w-[100%] h-[100%] object-cover" src="./image/img/news/bg-7.png" alt="" itemprop="image">
 
                     <div class="bg-gradient-to-r from-[#070707b3] to-transparent absolute h-[100%] w-[100%] bottom-0">
                         <div class="absolute top-[20px] right-[20px]">
@@ -245,17 +245,17 @@
                         </div>
 
                         <div class="flex gap-[12px] absolute bottom-[32px] left-[28px] flex-wrap">
-                            <div class="py-[3px] px-[12px] text-white uppercase bg-[#605CA8] text-[12px] font-medium">образование</div>
+                            <div class="py-[3px] px-[12px] text-white uppercase bg-[#605CA8] text-[12px] font-medium" itemprop="articleSection">образование</div>
                             
                             <div class="w-[100%]">
-                                <h2 class="w-[60%] text-white text-[22px] font-semibold">
+                                <h2 class="w-[60%] text-white text-[22px] font-semibold" itemprop="headline">
                                     Новую школу на Уктусе откроют в сентябре 2024 года
                                 </h2>
                             </div>
 
                             <div class="w-[100%]">
                                 <div class="text-[#dedede] font-[13px] font-normal">
-                                    05 сентября 11:00
+                                    <time itemprop="datePublished" datetime="2023-09-05T11:00:00">05 сентября 11:00</time>
                                 </div>
                             </div>
                         </div>
@@ -298,12 +298,12 @@
                     </div>
                     
                     <div class="block" data-tabs="news-region-russia" data-name="news-region">
-                        <div class="flex flex-wrap">
-                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#FF6600F6] text-white">
+                        <div class="flex flex-wrap" itemscope itemtype="http://schema.org/NewsArticle">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#FF6600F6] text-white" itemprop="articleSection">
                                 Спорт
                             </div>
 
-                            <div class="font-medium text-[15px] mt-[8px]">
+                            <div class="font-medium text-[15px] mt-[8px]" itemprop="headline">
                                 Школьница из Сеяхи отправилась в Калужскую область в крупнейшую военно-поисковую экспедицию
                             </div>
 
@@ -314,14 +314,14 @@
                             </div>
                         </div>
 
-                        <hr class="my-[14px]">
+                        <hr class="my-[14px]" itemscope itemtype="http://schema.org/NewsArticle">
 
                         <div class="flex flex-wrap">
-                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#006633] text-white">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#006633] text-white" itemprop="articleSection">
                                 Экономика
                             </div>
 
-                            <div class="font-medium text-[15px] mt-[8px]">
+                            <div class="font-medium text-[15px] mt-[8px]" itemprop="headline">
                                 Певица Лариса Долина выступит в Салехарде
                             </div>
 
@@ -332,14 +332,14 @@
                             </div>
                         </div>
 
-                        <hr class="my-[14px]">
+                        <hr class="my-[14px]" itemscope itemtype="http://schema.org/NewsArticle">
 
                         <div class="flex flex-wrap">
-                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#999999] text-white">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#999999] text-white" itemprop="articleSection">
                                 Общество
                             </div>
 
-                            <div class="font-medium text-[15px] mt-[8px]">
+                            <div class="font-medium text-[15px] mt-[8px]" itemprop="headline">
                                 Новый Уренгой купит 15 газомоторных автобусов в кредит
                             </div>
 
@@ -350,14 +350,14 @@
                             </div>
                         </div>
 
-                        <hr class="my-[14px]">
+                        <hr class="my-[14px]" itemscope itemtype="http://schema.org/NewsArticle">
 
                         <div class="flex flex-wrap">
-                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#FF6600F6] text-white">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#FF6600F6] text-white" itemprop="articleSection">
                                 Спорт
                             </div>
 
-                            <div class="font-medium text-[15px] mt-[8px]">
+                            <div class="font-medium text-[15px] mt-[8px]" itemprop="headline">
                                 На фестивале «Арктическая керамика» покажут эффектный обжиг в японской технике раку
                             </div>
 
@@ -368,14 +368,14 @@
                             </div>
                         </div>
 
-                        <hr class="my-[14px]">
+                        <hr class="my-[14px]" itemscope itemtype="http://schema.org/NewsArticle">
 
                         <div class="flex flex-wrap">
-                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#006633] text-white">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#006633] text-white" itemprop="articleSection">
                                 Экономика
                             </div>
 
-                            <div class="font-medium text-[15px] mt-[8px]">
+                            <div class="font-medium text-[15px] mt-[8px]" itemprop="headline">
                                 Губернатор ЯНАО Дмитрий Артюхов поздравил жителей региона с Международным днем коренных народов мира
                             </div>
 
@@ -386,14 +386,14 @@
                             </div>
                         </div>
 
-                        <hr class="my-[14px]">
+                        <hr class="my-[14px]" itemscope itemtype="http://schema.org/NewsArticle">
 
                         <div class="flex flex-wrap">
-                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#660099] text-white">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#660099] text-white" itemprop="articleSection">
                                 КУльтура
                             </div>
 
-                            <div class="font-medium text-[15px] mt-[8px]">
+                            <div class="font-medium text-[15px] mt-[8px]" itemprop="headline">
                                 Певица Лариса Долина выступит в Салехарде
                             </div>
 
@@ -404,14 +404,14 @@
                             </div>
                         </div>
 
-                        <hr class="my-[14px]">
+                        <hr class="my-[14px]" itemscope itemtype="http://schema.org/NewsArticle">
 
                         <div class="flex flex-wrap">
-                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#009933] text-white">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#009933] text-white" itemprop="articleSection">
                                 Экология
                             </div>
 
-                            <div class="font-medium text-[15px] mt-[8px]">
+                            <div class="font-medium text-[15px] mt-[8px]" itemprop="headline">
                                 Следы медведя заметили возле Нового Уренгоя
                             </div>
 
@@ -422,14 +422,14 @@
                             </div>
                         </div>
 
-                        <hr class="my-[14px]">
+                        <hr class="my-[14px]" itemscope itemtype="http://schema.org/NewsArticle">
 
                         <div class="flex flex-wrap">
-                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#999999] text-white">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#999999] text-white" itemprop="articleSection">
                                 Общество
                             </div>
 
-                            <div class="font-medium text-[15px] mt-[8px]">
+                            <div class="font-medium text-[15px] mt-[8px]" itemprop="headline">
                                 Вклад в будущее: «Газпромнефть-Аэро» готовит специалистов для авиатопливной отрасли
                             </div>
 
@@ -440,14 +440,14 @@
                             </div>
                         </div>
 
-                        <hr class="my-[14px]">
+                        <hr class="my-[14px]" itemscope itemtype="http://schema.org/NewsArticle">
 
                         <div class="flex flex-wrap">
-                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#999999] text-white">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#999999] text-white" itemprop="articleSection">
                                 Общество
                             </div>
 
-                            <div class="font-medium text-[15px] mt-[8px]">
+                            <div class="font-medium text-[15px] mt-[8px]" itemprop="headline">
                                 Новый Уренгой купит 15 газомоторных автобусов в кредит
                             </div>
 
@@ -458,14 +458,14 @@
                             </div>
                         </div>
 
-                        <hr class="my-[14px]">
+                        <hr class="my-[14px]" itemscope itemtype="http://schema.org/NewsArticle">
 
                         <div class="flex flex-wrap">
-                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#009933] text-white">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#009933] text-white" itemprop="articleSection">
                                 Экология
                             </div>
 
-                            <div class="font-medium text-[15px] mt-[8px]">
+                            <div class="font-medium text-[15px] mt-[8px]" itemprop="headline">
                                 Следы медведя заметили возле Нового Уренгоя
                             </div>
 
@@ -476,14 +476,14 @@
                             </div>
                         </div>
 
-                        <hr class="my-[14px]">
+                        <hr class="my-[14px]" itemscope itemtype="http://schema.org/NewsArticle">
 
                         <div class="flex flex-wrap">
-                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#006633] text-white">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#006633] text-white" itemprop="articleSection">
                                 Экономика
                             </div>
 
-                            <div class="font-medium text-[15px] mt-[8px]">
+                            <div class="font-medium text-[15px] mt-[8px]" itemprop="headline">
                                 Губернатор ЯНАО Дмитрий Артюхов поздравил жителей региона с Международным днем коренных народов мира
                             </div>
 
@@ -494,14 +494,14 @@
                             </div>
                         </div>
 
-                        <hr class="my-[14px]">
+                        <hr class="my-[14px]" itemscope itemtype="http://schema.org/NewsArticle">
 
                         <div class="flex flex-wrap">
-                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#FF6600F6] text-white">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#FF6600F6] text-white" itemprop="articleSection">
                                 Спорт
                             </div>
 
-                            <div class="font-medium text-[15px] mt-[8px]">
+                            <div class="font-medium text-[15px] mt-[8px]" itemprop="headline">
                                 На фестивале «Арктическая керамика» покажут эффектный обжиг в японской технике раку
                             </div>
 
@@ -514,12 +514,12 @@
                     </div>
 
                     <div class="hidden" data-tabs="news-region-yamal" data-name="news-region">
-                        <div class="flex flex-wrap">
-                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#999999] text-white">
+                        <div class="flex flex-wrap" itemscope itemtype="http://schema.org/NewsArticle">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#999999] text-white" itemprop="articleSection">
                                 Общество
                             </div>
 
-                            <div class="font-medium text-[15px] mt-[8px]">
+                            <div class="font-medium text-[15px] mt-[8px]" itemprop="headline">
                                 Новый Уренгой купит 15 газомоторных автобусов в кредит
                             </div>
 
@@ -532,12 +532,12 @@
 
                         <hr class="my-[14px]">
 
-                        <div class="flex flex-wrap">
-                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#009933] text-white">
+                        <div class="flex flex-wrap" itemscope itemtype="http://schema.org/NewsArticle">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#009933] text-white" itemprop="articleSection">
                                 Экология
                             </div>
 
-                            <div class="font-medium text-[15px] mt-[8px]">
+                            <div class="font-medium text-[15px] mt-[8px]" itemprop="headline">
                                 Следы медведя заметили возле Нового Уренгоя
                             </div>
 
@@ -550,12 +550,12 @@
 
                         <hr class="my-[14px]">
 
-                        <div class="flex flex-wrap">
-                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#006633] text-white">
+                        <div class="flex flex-wrap" itemscope itemtype="http://schema.org/NewsArticle">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#006633] text-white" itemprop="articleSection">
                                 Экономика
                             </div>
 
-                            <div class="font-medium text-[15px] mt-[8px]">
+                            <div class="font-medium text-[15px] mt-[8px]" itemprop="headline">
                                 Губернатор ЯНАО Дмитрий Артюхов поздравил жителей региона с Международным днем коренных народов мира
                             </div>
 
@@ -568,12 +568,12 @@
 
                         <hr class="my-[14px]">
                         
-                        <div class="flex flex-wrap">
-                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#FF6600F6] text-white">
+                        <div class="flex flex-wrap" itemscope itemtype="http://schema.org/NewsArticle">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#FF6600F6] text-white" itemprop="articleSection">
                                 Спорт
                             </div>
 
-                            <div class="font-medium text-[15px] mt-[8px]">
+                            <div class="font-medium text-[15px] mt-[8px]" itemprop="headline">
                                 Школьница из Сеяхи отправилась в Калужскую область в крупнейшую военно-поисковую экспедицию
                             </div>
 
@@ -586,12 +586,12 @@
 
                         <hr class="my-[14px]">
 
-                        <div class="flex flex-wrap">
-                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#006633] text-white">
+                        <div class="flex flex-wrap" itemscope itemtype="http://schema.org/NewsArticle">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#006633] text-white" itemprop="articleSection">
                                 Экономика
                             </div>
 
-                            <div class="font-medium text-[15px] mt-[8px]">
+                            <div class="font-medium text-[15px] mt-[8px]" itemprop="headline">
                                 Певица Лариса Долина выступит в Салехарде
                             </div>
 
@@ -604,12 +604,12 @@
 
                         <hr class="my-[14px]">
 
-                        <div class="flex flex-wrap">
-                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#999999] text-white">
+                        <div class="flex flex-wrap" itemscope itemtype="http://schema.org/NewsArticle">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#999999] text-white" itemprop="articleSection">
                                 Общество
                             </div>
 
-                            <div class="font-medium text-[15px] mt-[8px]">
+                            <div class="font-medium text-[15px] mt-[8px]" itemprop="headline">
                                 Новый Уренгой купит 15 газомоторных автобусов в кредит
                             </div>
 
@@ -622,12 +622,12 @@
 
                         <hr class="my-[14px]">
 
-                        <div class="flex flex-wrap">
-                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#FF6600F6] text-white">
+                        <div class="flex flex-wrap" itemscope itemtype="http://schema.org/NewsArticle">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#FF6600F6] text-white" itemprop="articleSection">
                                 Спорт
                             </div>
 
-                            <div class="font-medium text-[15px] mt-[8px]">
+                            <div class="font-medium text-[15px] mt-[8px]" itemprop="headline">
                                 На фестивале «Арктическая керамика» покажут эффектный обжиг в японской технике раку
                             </div>
 
@@ -640,12 +640,12 @@
 
                         <hr class="my-[14px]">
 
-                        <div class="flex flex-wrap">
-                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#006633] text-white">
+                        <div class="flex flex-wrap" itemscope itemtype="http://schema.org/NewsArticle">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#006633] text-white" itemprop="articleSection">
                                 Экономика
                             </div>
 
-                            <div class="font-medium text-[15px] mt-[8px]">
+                            <div class="font-medium text-[15px] mt-[8px]" itemprop="headline">
                                 Губернатор ЯНАО Дмитрий Артюхов поздравил жителей региона с Международным днем коренных народов мира
                             </div>
 
@@ -658,12 +658,12 @@
 
                         <hr class="my-[14px]">
 
-                        <div class="flex flex-wrap">
-                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#660099] text-white">
+                        <div class="flex flex-wrap" itemscope itemtype="http://schema.org/NewsArticle">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#660099] text-white" itemprop="articleSection">
                                 КУльтура
                             </div>
 
-                            <div class="font-medium text-[15px] mt-[8px]">
+                            <div class="font-medium text-[15px] mt-[8px]" itemprop="headline">
                                 Певица Лариса Долина выступит в Салехарде
                             </div>
 
@@ -676,12 +676,12 @@
 
                         <hr class="my-[14px]">
 
-                        <div class="flex flex-wrap">
-                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#009933] text-white">
+                        <div class="flex flex-wrap" itemscope itemtype="http://schema.org/NewsArticle">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#009933] text-white" itemprop="articleSection">
                                 Экология
                             </div>
 
-                            <div class="font-medium text-[15px] mt-[8px]">
+                            <div class="font-medium text-[15px] mt-[8px]" itemprop="headline">
                                 Следы медведя заметили возле Нового Уренгоя
                             </div>
 
@@ -694,12 +694,12 @@
 
                         <hr class="my-[14px]">
 
-                        <div class="flex flex-wrap">
-                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#999999] text-white">
+                        <div class="flex flex-wrap" itemscope itemtype="http://schema.org/NewsArticle">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#999999] text-white" itemprop="articleSection">
                                 Общество
                             </div>
 
-                            <div class="font-medium text-[15px] mt-[8px]">
+                            <div class="font-medium text-[15px] mt-[8px]" itemprop="headline">
                                 Вклад в будущее: «Газпромнефть-Аэро» готовит специалистов для авиатопливной отрасли
                             </div>
 
@@ -712,12 +712,12 @@
 
                         <hr class="my-[14px]">
 
-                        <div class="flex flex-wrap">
-                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#FF6600F6] text-white">
+                        <div class="flex flex-wrap" itemscope itemtype="http://schema.org/NewsArticle">
+                            <div class="uppercase py-[3px] px-[12px] font-medium text-[10px] bg-[#FF6600F6] text-white" itemprop="articleSection">
                                 Спорт
                             </div>
 
-                            <div class="font-medium text-[15px] mt-[8px]">
+                            <div class="font-medium text-[15px] mt-[8px]" itemprop="headline">
                                 На фестивале «Арктическая керамика» покажут эффектный обжиг в японской технике раку
                             </div>
 
@@ -733,41 +733,56 @@
         </div>
     </section>
 
-    <section class="bg-[#232323] mt-[60px] py-[60px]">
+    <section class="bg-[#232323] mt-[60px] py-[60px]" itemscope itemtype="http://schema.org/NewsArticle">
         <div class="container m-auto">
             <div class="mb-[32px]">
-                <span class="py-[6px] px-[16px] text-white bg-[#E3120E] uppercase font-semibold text-[24px]">Спецпроекты</span>
+                <span class="py-[6px] px-[16px] text-white bg-[#E3120E] uppercase font-semibold text-[24px]" itemprop="articleSection">Спецпроекты</span>
             </div>
 
             <div class="swiper swiper_projects">
                 <div class="w-[140px] h-[80%] absolute top-[50%] translate-y-[-50%] left-[0px] bg-gradient-to-l from-transparent to-[#232323e6] z-10"></div>
 
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide overflow-hidden w-[70%] relative">
+                    <div class="swiper-slide overflow-hidden w-[70%] relative" itemscope itemtype="http://schema.org/NewsArticle">
                         <img class="w-[100%] h-[100%]" src="./image/img/projects/bg-1.png" alt="">
                         <div class="w-[100%] h-[50%] absolute bottom-[0px] left-[0px] bg-gradient-to-b from-transparent to-[#070707b3]"></div>
 
                         <div class="absolute w-[100%] px-[60px] bottom-[40px] left-[50%] translate-x-[-50%] text-white font-semibold text-[32px] leading-[42px]">
-                            Нефтяники начнут использовать агродроны для посева культур на удаленных участках тундры
+                            <h2 itemprop="headline">Нефтяники начнут использовать агродроны для посева культур на удаленных участках тундры</h2>
                         </div>
+
+                        <!-- Дополнительные свойства Schema.org для новостной статьи -->
+                        <meta itemprop="datePublished" content="2023-11-26">
+                        <meta itemprop="image" content="./image/img/projects/bg-2.png">
+                        <meta itemprop="url" content="URL-вашей-статьи">
                     </div>
 
-                    <div class="swiper-slide overflow-hidden w-[70%] relative">
+                    <div class="swiper-slide overflow-hidden w-[70%] relative" itemscope itemtype="http://schema.org/NewsArticle">
                         <img class="w-[100%] h-[100%]" src="./image/img/projects/bg-2.png" alt="">
                         <div class="w-[100%] h-[50%] absolute bottom-[0px] left-[0px] bg-gradient-to-b from-transparent to-[#070707b3]"></div>
 
                         <div class="absolute w-[100%] px-[60px] bottom-[40px] left-[50%] translate-x-[-50%] text-white font-semibold text-[32px] leading-[42px]">
-                            Нефтяники начнут использовать агродроны для посева культур на удаленных участках тундры
+                            <h2 itemprop="headline">Нефтяники начнут использовать агродроны для посева культур на удаленных участках тундры</h2>
                         </div>
+
+                        <!-- Дополнительные свойства Schema.org для новостной статьи -->
+                        <meta itemprop="datePublished" content="2023-11-26">
+                        <meta itemprop="image" content="./image/img/projects/bg-2.png">
+                        <meta itemprop="url" content="URL-вашей-статьи">
                     </div>
 
-                    <div class="swiper-slide overflow-hidden w-[70%] relative">
+                    <div class="swiper-slide overflow-hidden w-[70%] relative" itemscope itemtype="http://schema.org/NewsArticle">
                         <img class="w-[100%] h-[100%]" src="./image/img/projects/bg-3.png" alt="">
                         <div class="w-[100%] h-[50%] absolute bottom-[0px] left-[0px] bg-gradient-to-b from-transparent to-[#070707b3]"></div>
 
                         <div class="absolute w-[100%] px-[60px] bottom-[40px] left-[50%] translate-x-[-50%] text-white font-semibold text-[32px] leading-[42px]">
-                            Нефтяники начнут использовать агродроны для посева культур на удаленных участках тундры
+                            <h2 itemprop="headline">Нефтяники начнут использовать агродроны для посева культур на удаленных участках тундры</h2>
                         </div>
+
+                        <!-- Дополнительные свойства Schema.org для новостной статьи -->
+                        <meta itemprop="datePublished" content="2023-11-26">
+                        <meta itemprop="image" content="./image/img/projects/bg-2.png">
+                        <meta itemprop="url" content="URL-вашей-статьи">
                     </div>
                 </div>
 
@@ -779,112 +794,112 @@
         </div>
     </section>
 
-    <section class="py-[32px]">
+    <section class="py-[32px]" itemscope itemtype="http://schema.org/NewsArticle">
         <div class="container m-auto flex flex gap-[40px]">
             <div class="w-[calc(50%-40px)]">
                 <div class="mb-[24px]">
-                    <span class="py-[6px] px-[16px] uppercase text-[24px] font-semibold text-white bg-[#063]">
+                    <span class="py-[6px] px-[16px] uppercase text-[24px] font-semibold text-white bg-[#063]" itemprop="articleSection">
                         Экономика
                     </span>
                 </div>
 
                 <a class="relative" href="./image/img/news/bg-8.png" data-fancybox>
                     <img class="absolute top-[24px] right-[24px] w-[60px] h-[60px]" src="./image/icon/play.svg" alt="">
-                    <img class="aspect-video object-cover" src="./image/img/news/bg-8.png" alt="">
+                    <img class="aspect-video object-cover" src="./image/img/news/bg-8.png" alt="" itemprop="image">
                 </a>
 
-                <h4 class="mt-[14px] text-[24px] font-semibold">
+                <h4 class="mt-[14px] text-[24px] font-semibold" itemprop="headline">
                     Глава Тюменской области Александр Моор получил удостоверение кандидата в губернаторы региона
                 </h4>
 
                 <div class="text-[#999] text-[13px] font-normal mt-[8px]">
-                    05 сентября 11:00
+                    <time itemprop="datePublished" datetime="2023-09-05T11:00:00">05 сентября 11:00</time>
                 </div>
             </div>
 
             <div class="w-[calc(50%-40px)]">
                 <div class="mb-[24px]">
-                    <span class="py-[6px] px-[16px] uppercase text-[24px] font-semibold text-white bg-[#036]">
+                    <span class="py-[6px] px-[16px] uppercase text-[24px] font-semibold text-white bg-[#036]" itemprop="articleSection">
                         Политика
                     </span>
                 </div>
 
                 <a class="" href="./image/img/news/bg-9.png" data-fancybox>
-                    <img class="aspect-video object-cover" src="./image/img/news/bg-9.png" alt="">
+                    <img class="aspect-video object-cover" src="./image/img/news/bg-9.png" alt="" itemprop="image">
                 </a>
 
-                <h4 class="mt-[14px] text-[24px] font-semibold">
+                <h4 class="mt-[14px] text-[24px] font-semibold" itemprop="headline">
                     Андрей Гаранин с понедельника заступает на пост заместителя губернатора ЯНАО
                 </h4>
 
                 <div class="text-[#999] text-[13px] font-normal mt-[8px]">
-                    05 сентября 11:00
+                    <time itemprop="datePublished" datetime="2023-09-05T11:00:00">05 сентября 11:00</time>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-[32px] pb-[60px]">
+    <section class="py-[32px] pb-[60px]" itemscope itemtype="http://schema.org/NewsArticle">
         <div class="container m-auto">
             <div class="flex gap-[6px]">
                 <img class="m-auto mx-0" src="./image/icon/smi24.svg" alt="">
-                <p class="m-auto font-semibold text-[18px] mx-0" >24СМИ</p>
+                <p class="m-auto font-semibold text-[18px] mx-0" itemprop="publisher">24СМИ</p>
             </div>
 
             <div class="swiper swiper_news24 mt-[20px]">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]">
-                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-1.png" alt="">
+                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]" itemscope itemtype="http://schema.org/NewsArticle">
+                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-1.png" alt="" itemprop="image">
 
-                        <div class="text-[16px] font-medium px-[20px]">
+                        <div class="text-[16px] font-medium px-[20px]" itemprop="headline">
                             По делу Блиновской арестовали активы на 64 миллиарда рублей
                         </div>
                     </div>
 
-                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]">
-                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-2.png" alt="">
+                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]" itemscope itemtype="http://schema.org/NewsArticle">
+                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-2.png" alt="" itemprop="image">
 
-                        <div class="text-[16px] font-medium px-[20px]">
+                        <div class="text-[16px] font-medium px-[20px]" itemprop="headline">
                             В НАТО допустили обмен территорий Украины на членство в альянсе
                         </div>
                     </div>
 
-                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]">
-                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-3.png" alt="">
+                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]" itemscope itemtype="http://schema.org/NewsArticle">
+                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-3.png" alt="" itemprop="image">
 
-                        <div class="text-[16px] font-medium px-[20px]">
+                        <div class="text-[16px] font-medium px-[20px]" itemprop="headline">
                             В Грузии освистали группу The Killers за приглашение на сцену барабанщика из России
                         </div>
                     </div>
 
-                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]">
-                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-4.png" alt="">
+                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]" itemscope itemtype="http://schema.org/NewsArticle">
+                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-4.png" alt="" itemprop="image">
 
-                        <div class="text-[16px] font-medium px-[20px]">
+                        <div class="text-[16px] font-medium px-[20px]" itemprop="headline">
                             Минобороны: ВС РФ перехватили четыре крылатых ракеты большой дальности SCALP-EG
                         </div>
                     </div>
 
-                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]">
-                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-5.png" alt="">
+                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]" itemscope itemtype="http://schema.org/NewsArticle">
+                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-5.png" alt="" itemprop="image">
 
-                        <div class="text-[16px] font-medium px-[20px]">
+                        <div class="text-[16px] font-medium px-[20px]" itemprop="headline">
                             Средства ПВО сбили три беспилотника над Калужской областью
                         </div>
                     </div>
 
-                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]">
-                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-6.png" alt="">
+                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]" itemscope itemtype="http://schema.org/NewsArticle">
+                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-6.png" alt="" itemprop="image">
 
-                        <div class="text-[16px] font-medium px-[20px]">
+                        <div class="text-[16px] font-medium px-[20px]" itemprop="headline">
                             Что будет с рублем, вкладами и кредитами после повышения ключевой ставки до 12%
                         </div>
                     </div>
                     
-                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]">
-                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-6.png" alt="">
+                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]" itemscope itemtype="http://schema.org/NewsArticle">
+                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-6.png" alt="" itemprop="image">
 
-                        <div class="text-[16px] font-medium px-[20px]">
+                        <div class="text-[16px] font-medium px-[20px]" itemprop="headline">
                             Что будет с рублем, вкладами и кредитами после повышения ключевой ставки до 12%
                         </div>
                     </div>
@@ -893,7 +908,7 @@
         </div>
     </section>
 
-    <section class="bg-[#232323] pt-[36px] pb-[60px]">
+    <section class="bg-[#232323] pt-[36px] pb-[60px]" itemscope itemtype="http://schema.org/VideoObject">
         <div class="container m-auto">
             <div class="mb-[24px]">
                 <span class="py-[6px] px-[16px] text-white bg-[#E3120E] uppercase font-semibold text-[24px]">Видео</span>
@@ -901,33 +916,33 @@
 
             <div class="swiper swiper_video mt-[20px]">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide h-[480px] relative overflow-hidden mx-[12px]">
-                        <img class="w-[100%] h-[100%] absolute top-0 left-0 object-cover aspect-video mb-[18px]" src="./image/img/videos/bg-1.png" alt="">
+                    <div class="swiper-slide h-[480px] relative overflow-hidden mx-[12px]" itemscope itemtype="http://schema.org/VideoObject">
+                        <img class="w-[100%] h-[100%] absolute top-0 left-0 object-cover aspect-video mb-[18px]" src="./image/img/videos/bg-1.png" alt="" itemprop="thumbnailUrl">
 
                         <div class="w-[100%] h-[100%] absolute bottom-[-25%] left-0 rotate-90 bg-gradient-to-r from-transparent to-[#070707b3]"></div>
 
                         <div class="absolute bottom-[20px] left-[20px]">
-                            <span class="bg-[#999] text-[12px] font-medium text-white px-[12px] py-[3px] uppercase mb-[8px]">
+                            <span class="bg-[#999] text-[12px] font-medium text-white px-[12px] py-[3px] uppercase mb-[8px]" itemprop="genre">
                                 Общество
                             </span>
 
-                            <div class="text-white text-[18px] font-semibold leading-[23px] mt-[8px] pr-[20px]">
+                            <div class="text-white text-[18px] font-semibold leading-[23px] mt-[8px] pr-[20px]" itemprop="name">
                                 Поправки в законе о рыболовстве очень ждут коренные народы Севера
                             </div>
                         </div>
                     </div>
 
-                    <div class="swiper-slide h-[480px] relative overflow-hidden mx-[12px]">
-                        <img class="w-[100%] h-[100%] absolute top-0 left-0 object-cover aspect-video mb-[18px]" src="./image/img/videos/bg-2.png" alt="">
+                    <div class="swiper-slide h-[480px] relative overflow-hidden mx-[12px]" itemscope itemtype="http://schema.org/VideoObject">
+                        <img class="w-[100%] h-[100%] absolute top-0 left-0 object-cover aspect-video mb-[18px]" src="./image/img/videos/bg-2.png" alt="" itemprop="thumbnailUrl">
 
                         <div class="w-[100%] h-[100%] absolute bottom-[-25%] left-0 rotate-90 bg-gradient-to-r from-transparent to-[#070707b3]"></div>
 
                         <div class="absolute bottom-[20px] left-[20px]">
-                            <span class="bg-[#0062C6] text-[12px] font-medium text-white px-[12px] py-[3px] uppercase mb-[8px]">
+                            <span class="bg-[#0062C6] text-[12px] font-medium text-white px-[12px] py-[3px] uppercase mb-[8px]" itemprop="genre">
                                 Политика
                             </span>
 
-                            <div class="text-white text-[18px] font-semibold leading-[23px] mt-[8px] pr-[20px]">
+                            <div class="text-white text-[18px] font-semibold leading-[23px] mt-[8px] pr-[20px]" itemprop="name">
                                 Администрация Лабытнанги прокомментировала «песчаную бурю» в городе
                             </div>
                         </div>
@@ -1004,219 +1019,235 @@
         </div>
     </section>
 
-    <section class="py-[60px]">
+    <section class="py-[60px]" itemscope itemtype="http://schema.org/NewsArticle">
         <div class="container m-auto flex flex gap-[40px]">
-            <div class="w-[calc(50%-40px)]">
+            <div class="w-[calc(50%-40px)]" itemscope itemtype="http://schema.org/NewsArticle">
                 <div class="mb-[24px]">
-                    <span class="py-[6px] px-[16px] uppercase text-[24px] font-semibold text-white bg-[#605CA8]">
+                    <span class="py-[6px] px-[16px] uppercase text-[24px] font-semibold text-white bg-[#605CA8]" itemprop="articleSection">
                         Образование
                     </span>
                 </div>
 
                 <a class="w-[100%] relative aspect-video" href="./image/img/news/bg-9.png" data-fancybox>
                     <img class="absolute top-[24px] right-[24px] w-[60px] h-[60px]" src="./image/icon/play.svg" alt="">
-                    <img class="w-[100%] object-cover" src="./image/img/news/bg-9.png" alt="">
+                    <img class="w-[100%] object-cover" src="./image/img/news/bg-9.png" alt="" itemprop="image">
                 </a>
 
-                <h4 class="mt-[14px] text-[24px] font-semibold">
+                <h4 class="mt-[14px] text-[24px] font-semibold" itemprop="headline">
                     В Новом Уренгое приступили к возведению новой, необычной школы искусств
                 </h4>
 
                 <div class="text-[#999] text-[13px] font-normal mt-[8px]">
-                    05 сентября 11:00
+                    <time itemprop="datePublished" datetime="2023-09-05T11:00:00">05 сентября 11:00</time>
                 </div>
             </div>
 
-            <div class="w-[calc(50%-40px)]">
+            <div class="w-[calc(50%-40px)]" itemscope itemtype="http://schema.org/NewsArticle">
                 <div class="mb-[24px]">
-                    <span class="py-[6px] px-[16px] uppercase text-[24px] font-semibold text-white bg-[#806B2A]">
+                    <span class="py-[6px] px-[16px] uppercase text-[24px] font-semibold text-white bg-[#806B2A]" itemprop="articleSection">
                         Строительство
                     </span>
                 </div>
 
                 <a class="w-[100%] aspect-video" href="./image/img/news/bg-11.png" data-fancybox>
-                    <img class="w-[100%] object-cover" src="./image/img/news/bg-11.png" alt="">
+                    <img class="w-[100%] object-cover" src="./image/img/news/bg-11.png" alt="" itemprop="image">
                 </a>
 
-                <h4 class="mt-[14px] text-[24px] font-semibold">
+                <h4 class="mt-[14px] text-[24px] font-semibold" itemprop="headline">
                     Артюхов пообещал закрыть потребность Надыма в асфальте при помощи нового завода
                 </h4>
 
                 <div class="text-[#999] text-[13px] font-normal mt-[8px]">
-                    05 сентября 11:00
+                    <time itemprop="datePublished" datetime="2023-09-05T11:00:00">05 сентября 11:00</time>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-[32px] pb-[60px]">
+    <section class="py-[32px] pb-[60px]" itemscope itemtype="http://schema.org/NewsArticle">
         <div class="container m-auto">
             <div class="flex gap-[6px]">
-                <img class="m-auto mx-0" src="./image/icon/smi24.svg" alt="">
-                <p class="m-auto font-semibold text-[18px] mx-0" >24СМИ</p>
+                <img class="m-auto mx-0" src="./image/icon/smi24.svg" alt="" >
+                <p class="m-auto font-semibold text-[18px] mx-0" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                    <span itemprop="name">24СМИ</span>
+                </p>
             </div>
 
             <div class="swiper swiper_news24 mt-[20px]">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]">
-                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-1.png" alt="">
+                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]" itemscope itemtype="http://schema.org/NewsArticle">
+                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-1.png" alt="" itemprop="image">
 
-                        <div class="text-[16px] font-medium px-[20px]">
+                        <div class="text-[16px] font-medium px-[20px]" itemprop="headline">
                             По делу Блиновской арестовали активы на 64 миллиарда рублей
                         </div>
+
+                        <meta itemprop="datePublished" content="2023-11-26T00:00:00Z" />
                     </div>
 
-                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]">
-                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-2.png" alt="">
+                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]" itemscope itemtype="http://schema.org/NewsArticle">
+                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-2.png" alt="" itemprop="image">
 
-                        <div class="text-[16px] font-medium px-[20px]">
+                        <div class="text-[16px] font-medium px-[20px]" itemprop="headline">
                             В НАТО допустили обмен территорий Украины на членство в альянсе
                         </div>
+
+                        <meta itemprop="datePublished" content="2023-11-26T00:00:00Z" />
                     </div>
 
-                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]">
-                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-3.png" alt="">
+                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]" itemscope itemtype="http://schema.org/NewsArticle">
+                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-3.png" alt="" itemprop="image">
 
-                        <div class="text-[16px] font-medium px-[20px]">
+                        <div class="text-[16px] font-medium px-[20px]" itemprop="headline">
                             В Грузии освистали группу The Killers за приглашение на сцену барабанщика из России
                         </div>
+
+                        <meta itemprop="datePublished" content="2023-11-26T00:00:00Z" />
                     </div>
 
-                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]">
-                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-4.png" alt="">
+                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]" itemscope itemtype="http://schema.org/NewsArticle">
+                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-4.png" alt="" itemprop="image">
 
-                        <div class="text-[16px] font-medium px-[20px]">
+                        <div class="text-[16px] font-medium px-[20px]" itemprop="headline">
                             Минобороны: ВС РФ перехватили четыре крылатых ракеты большой дальности SCALP-EG
                         </div>
+
+                        <meta itemprop="datePublished" content="2023-11-26T00:00:00Z" />
                     </div>
 
-                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]">
-                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-5.png" alt="">
+                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]" itemscope itemtype="http://schema.org/NewsArticle">
+                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-5.png" alt="" itemprop="image">
 
-                        <div class="text-[16px] font-medium px-[20px]">
+                        <div class="text-[16px] font-medium px-[20px]" itemprop="headline">
                             Средства ПВО сбили три беспилотника над Калужской областью
                         </div>
+
+                        <meta itemprop="datePublished" content="2023-11-26T00:00:00Z" />
                     </div>
 
-                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]">
-                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-6.png" alt="">
+                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]" itemscope itemtype="http://schema.org/NewsArticle">
+                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-6.png" alt="" itemprop="image">
 
-                        <div class="text-[16px] font-medium px-[20px]">
+                        <div class="text-[16px] font-medium px-[20px]" itemprop="headline">
                             Что будет с рублем, вкладами и кредитами после повышения ключевой ставки до 12%
                         </div>
+
+                        <meta itemprop="datePublished" content="2023-11-26T00:00:00Z" />
                     </div>
                     
-                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]">
-                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-6.png" alt="">
+                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]" itemscope itemtype="http://schema.org/NewsArticle">
+                        <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-6.png" alt="" itemprop="image">
 
-                        <div class="text-[16px] font-medium px-[20px]">
+                        <div class="text-[16px] font-medium px-[20px]" itemprop="headline">
                             Что будет с рублем, вкладами и кредитами после повышения ключевой ставки до 12%
                         </div>
+
+                        <meta itemprop="datePublished" content="2023-11-26T00:00:00Z" />
                     </div>
                   </div>
             </div>
         </div>
     </section>
 
-    <section class="pt-[36px] pb-[60px]">
+    <section class="pt-[36px] pb-[60px]" itemscope itemtype="http://schema.org/NewsArticle">
         <div class="container m-auto">
             <div class="mb-[24px]">
-                <span class="py-[6px] px-[16px] text-white bg-[#E3120E] uppercase font-semibold text-[24px]">Фоторепортажи</span>
+                <span class="py-[6px] px-[16px] text-white bg-[#E3120E] uppercase font-semibold text-[24px]" itemprop="category">Фоторепортажи</span>
             </div>
 
             <div class="swiper swiper_video mt-[20px]">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide h-[480px] relative overflow-hidden mx-[12px]">
-                        <img class="w-[100%] h-[100%] absolute top-0 left-0 object-cover aspect-video mb-[18px]" src="./image/img/videos/bg-1.png" alt="">
+                    <div class="swiper-slide h-[480px] relative overflow-hidden mx-[12px]" itemscope itemtype="http://schema.org/ImageObject">
+                        <img class="w-[100%] h-[100%] absolute top-0 left-0 object-cover aspect-video mb-[18px]" src="./image/img/videos/bg-1.png" alt="" itemprop="contentUrl">
 
                         <div class="w-[100%] h-[100%] absolute bottom-[-25%] left-0 rotate-90 bg-gradient-to-r from-transparent to-[#070707b3]"></div>
 
                         <div class="absolute bottom-[20px] left-[20px]">
-                            <span class="bg-[#999] text-[12px] font-medium text-white px-[12px] py-[3px] uppercase mb-[8px]">
+                            <span class="bg-[#999] text-[12px] font-medium text-white px-[12px] py-[3px] uppercase mb-[8px]" itemprop="articleSection">
                                 Общество
                             </span>
 
-                            <div class="text-white text-[18px] font-semibold leading-[23px] mt-[8px] pr-[20px]">
+                            <div class="text-white text-[18px] font-semibold leading-[23px] mt-[8px] pr-[20px]" itemprop="description">
                                 Поправки в законе о рыболовстве очень ждут коренные народы Севера
                             </div>
                         </div>
                     </div>
 
-                    <div class="swiper-slide h-[480px] relative overflow-hidden mx-[12px]">
-                        <img class="w-[100%] h-[100%] absolute top-0 left-0 object-cover aspect-video mb-[18px]" src="./image/img/videos/bg-2.png" alt="">
+                    <div class="swiper-slide h-[480px] relative overflow-hidden mx-[12px]" itemscope itemtype="http://schema.org/ImageObject">
+                        <img class="w-[100%] h-[100%] absolute top-0 left-0 object-cover aspect-video mb-[18px]" src="./image/img/videos/bg-2.png" alt="" itemprop="contentUrl">
 
                         <div class="w-[100%] h-[100%] absolute bottom-[-25%] left-0 rotate-90 bg-gradient-to-r from-transparent to-[#070707b3]"></div>
 
                         <div class="absolute bottom-[20px] left-[20px]">
-                            <span class="bg-[#0062C6] text-[12px] font-medium text-white px-[12px] py-[3px] uppercase mb-[8px]">
+                            <span class="bg-[#0062C6] text-[12px] font-medium text-white px-[12px] py-[3px] uppercase mb-[8px]" itemprop="articleSection">
                                 Политика
                             </span>
 
-                            <div class="text-white text-[18px] font-semibold leading-[23px] mt-[8px] pr-[20px]">
+                            <div class="text-white text-[18px] font-semibold leading-[23px] mt-[8px] pr-[20px]" itemprop="description">
                                 Администрация Лабытнанги прокомментировала «песчаную бурю» в городе
                             </div>
                         </div>
                     </div>
 
-                    <div class="swiper-slide h-[480px] relative overflow-hidden mx-[12px]">
-                        <img class="w-[100%] h-[100%] absolute top-0 left-0 object-cover aspect-video mb-[18px]" src="./image/img/videos/bg-3.png" alt="">
+                    <div class="swiper-slide h-[480px] relative overflow-hidden mx-[12px]" itemscope itemtype="http://schema.org/ImageObject">
+                        <img class="w-[100%] h-[100%] absolute top-0 left-0 object-cover aspect-video mb-[18px]" src="./image/img/videos/bg-3.png" alt="" itemprop="contentUrl">
 
                         <div class="w-[100%] h-[100%] absolute bottom-[-25%] left-0 rotate-90 bg-gradient-to-r from-transparent to-[#070707b3]"></div>
 
                         <div class="absolute bottom-[20px] left-[20px]">
-                            <span class="bg-[#609] text-[12px] font-medium text-white px-[12px] py-[3px] uppercase mb-[8px]">
+                            <span class="bg-[#609] text-[12px] font-medium text-white px-[12px] py-[3px] uppercase mb-[8px]" itemprop="articleSection">
                                 Культура
                             </span>
 
-                            <div class="text-white text-[18px] font-semibold leading-[23px] mt-[8px] pr-[20px]">
+                            <div class="text-white text-[18px] font-semibold leading-[23px] mt-[8px] pr-[20px]" itemprop="description">
                                 В Салехарде в ноябре пройдет форум молодежи КМНС «Российский Север»
                             </div>
                         </div>
                     </div>
 
-                    <div class="swiper-slide h-[480px] relative overflow-hidden mx-[12px]">
-                        <img class="w-[100%] h-[100%] absolute top-0 left-0 object-cover aspect-video mb-[18px]" src="./image/img/videos/bg-4.png" alt="">
+                    <div class="swiper-slide h-[480px] relative overflow-hidden mx-[12px]" itemscope itemtype="http://schema.org/ImageObject">
+                        <img class="w-[100%] h-[100%] absolute top-0 left-0 object-cover aspect-video mb-[18px]" src="./image/img/videos/bg-4.png" alt="" itemprop="contentUrl">
 
                         <div class="w-[100%] h-[100%] absolute bottom-[-25%] left-0 rotate-90 bg-gradient-to-r from-transparent to-[#070707b3]"></div>
 
                         <div class="absolute bottom-[20px] left-[20px]">
-                            <span class="bg-[#806B2A] text-[12px] font-medium text-white px-[12px] py-[3px] uppercase mb-[8px]">
+                            <span class="bg-[#806B2A] text-[12px] font-medium text-white px-[12px] py-[3px] uppercase mb-[8px]" itemprop="articleSection">
                                 строительство
                             </span>
 
-                            <div class="text-white text-[18px] font-semibold leading-[23px] mt-[8px] pr-[20px]">
+                            <div class="text-white text-[18px] font-semibold leading-[23px] mt-[8px] pr-[20px]" itemprop="description">
                                 Воспитанники Губкинского детского сада вырастили на огороде различные овощи
                             </div>
                         </div>
                     </div>
 
-                    <div class="swiper-slide h-[480px] relative overflow-hidden mx-[12px]">
-                        <img class="w-[100%] h-[100%] absolute top-0 left-0 object-cover aspect-video mb-[18px]" src="./image/img/videos/bg-5.png" alt="">
+                    <div class="swiper-slide h-[480px] relative overflow-hidden mx-[12px]" itemscope itemtype="http://schema.org/ImageObject">
+                        <img class="w-[100%] h-[100%] absolute top-0 left-0 object-cover aspect-video mb-[18px]" src="./image/img/videos/bg-5.png" alt="" itemprop="contentUrl">
 
                         <div class="w-[100%] h-[100%] absolute bottom-[-25%] left-0 rotate-90 bg-gradient-to-r from-transparent to-[#070707b3]"></div>
 
                         <div class="absolute bottom-[20px] left-[20px]">
-                            <span class="bg-[#609] text-[12px] font-medium text-white px-[12px] py-[3px] uppercase mb-[8px]">
+                            <span class="bg-[#609] text-[12px] font-medium text-white px-[12px] py-[3px] uppercase mb-[8px]" itemprop="articleSection">
                                 Культура
                             </span>
 
-                            <div class="text-white text-[18px] font-semibold leading-[23px] mt-[8px] pr-[20px]">
+                            <div class="text-white text-[18px] font-semibold leading-[23px] mt-[8px] pr-[20px]" itemprop="description">
                                 «Газпром нефть» откроет асфальтобетонный завод в Пермском крае
                             </div>
                         </div>
                     </div>
 
-                    <div class="swiper-slide h-[480px] relative overflow-hidden mx-[12px]">
-                        <img class="w-[100%] h-[100%] absolute top-0 left-0 object-cover aspect-video mb-[18px]" src="./image/img/videos/bg-2.png" alt="">
+                    <div class="swiper-slide h-[480px] relative overflow-hidden mx-[12px]" itemscope itemtype="http://schema.org/ImageObject">
+                        <img class="w-[100%] h-[100%] absolute top-0 left-0 object-cover aspect-video mb-[18px]" src="./image/img/videos/bg-2.png" alt="" itemprop="contentUrl">
 
                         <div class="w-[100%] h-[100%] absolute bottom-[-25%] left-0 rotate-90 bg-gradient-to-r from-transparent to-[#070707b3]"></div>
 
                         <div class="absolute bottom-[20px] left-[20px]">
-                            <span class="bg-[#0062C6] text-[12px] font-medium text-white px-[12px] py-[3px] uppercase mb-[8px]">
+                            <span class="bg-[#0062C6] text-[12px] font-medium text-white px-[12px] py-[3px] uppercase mb-[8px]" itemprop="articleSection">
                                 Политика
                             </span>
 
-                            <div class="text-white text-[18px] font-semibold leading-[23px] mt-[8px] pr-[20px]">
+                            <div class="text-white text-[18px] font-semibold leading-[23px] mt-[8px] pr-[20px]" itemprop="description">
                                 Администрация Лабытнанги прокомментировала «песчаную бурю» в городе
                             </div>
                         </div>
@@ -1229,78 +1260,78 @@
         </div>
     </section>
 
-    <section class="mt-[30px] mb-[106px]">
+    <section class="mt-[30px] mb-[106px]" itemscope itemtype="http://schema.org/NewsArticle">
         <div class="container m-auto flex flex-wrap gap-[40px]">
-            <div class="w-[calc(33.3%-40px)]">
+            <div class="w-[calc(33.3%-40px)]" itemprop="articleSection">
                 <div class="mb-[24px]">
                     <span class="py-[6px] px-[16px] uppercase text-[24px] font-semibold text-white bg-[#609]">
                         Культура
                     </span>
                 </div>
 
-                <a class="w-[100%] relative aspect-video" href="./image/img/news/bg-12.png" data-fancybox>
+                <a class="w-[100%] relative aspect-video" href="./image/img/news/bg-12.png" data-fancybox itemprop="url">
                     <img class="absolute top-[20px] right-[20px] w-[44px] h-[44px]" src="./image/icon/play.svg" alt="">
-                    <img class="w-[100%] object-cover" src="./image/img/news/bg-12.png" alt="">
+                    <img class="w-[100%] object-cover" src="./image/img/news/bg-12.png" alt="" itemprop="image">
                 </a>
 
-                <h4 class="mt-[14px] text-[24px] font-semibold">
+                <h4 class="mt-[14px] text-[24px] font-semibold" itemprop="headline">
                     Выставка «Ямал. Тепло Арктики» познакомит жителей Тюмени и Петербурга с культурой Севера
                 </h4>
 
-                <div class="text-[#999] text-[13px] font-normal mt-[8px]">
+                <div class="text-[#999] text-[13px] font-normal mt-[8px]" itemprop="datePublished">
                     05 сентября 11:00
                 </div>
             </div>
 
-            <div class="w-[calc(33.3%-40px)]">
+            <div class="w-[calc(33.3%-40px)]" itemprop="articleSection">
                 <div class="mb-[24px]">
                     <span class="py-[6px] px-[16px] uppercase text-[24px] font-semibold text-white bg-[#0062DC]">
                         Медицина
                     </span>
                 </div>
 
-                <a class="w-[100%] aspect-video" href="./image/img/news/bg-13.png" data-fancybox>
-                    <img class="w-[100%] object-cover" src="./image/img/news/bg-13.png" alt="">
+                <a class="w-[100%] aspect-video" href="./image/img/news/bg-13.png" data-fancybox itemprop="url">
+                    <img class="w-[100%] object-cover" src="./image/img/news/bg-13.png" alt="" itemprop="image">
                 </a>
 
-                <h4 class="mt-[14px] text-[24px] font-semibold">
+                <h4 class="mt-[14px] text-[24px] font-semibold" itemprop="headline">
                     Смольный выделит более 1,5 млн рублей на развитие петербургской медицины
                 </h4>
 
-                <div class="text-[#999] text-[13px] font-normal mt-[8px]">
+                <div class="text-[#999] text-[13px] font-normal mt-[8px]" itemprop="datePublished">
                     05 сентября 11:00
                 </div>
             </div>
 
-            <div class="w-[calc(33.3%-40px)]">
+            <div class="w-[calc(33.3%-40px)]" itemprop="articleSection">
                 <div class="mb-[24px]">
                     <span class="py-[6px] px-[16px] uppercase text-[24px] font-semibold text-white bg-[#630]">
                         ЖКХ
                     </span>
                 </div>
 
-                <a class="w-[100%] aspect-video" href="./image/img/news/bg-14.png" data-fancybox>
-                    <img class="w-[100%] object-cover" src="./image/img/news/bg-14.png" alt="">
+                <a class="w-[100%] aspect-video" href="./image/img/news/bg-14.png" data-fancybox itemprop="url">
+                    <img class="w-[100%] object-cover" src="./image/img/news/bg-14.png" alt="" itemprop="image">
                 </a>
 
-                <h4 class="mt-[14px] text-[24px] font-semibold">
+                <h4 class="mt-[14px] text-[24px] font-semibold" itemprop="headline">
                     Владимир Путин поручил дать регионам право вводить курортный сбор
                 </h4>
 
-                <div class="text-[#999] text-[13px] font-normal mt-[8px]">
+                <div class="text-[#999] text-[13px] font-normal mt-[8px]" itemprop="datePublished">
                     05 сентября 11:00
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-[#232323] py-[40px]">
+    <footer class="bg-[#232323] py-[40px]" itemscope itemtype="http://schema.org/WebPage">
         <div class="container m-auto">
             <div class="flex justify-between">
                 <div class="flex gap-[32px]">
                     <img src="./image/icon/logo_footer.png" alt="">
-
-                    <ul class="flex gap-[32px] m-auto mx-0">
+ 
+                    <ul class="flex gap-[32px] m-auto mx-0" itemprop="about">
                         <a class="text-white" href="#"><li class="uppercase text-[17px] font-medium">Редакция</li></a>
                         <a class="text-white" href="#"><li class="uppercase text-[17px] font-medium">Вакансии</li></a>
                         <a class="text-white" href="#"><li class="uppercase text-[17px] font-medium">Реклама</li></a>
@@ -1310,7 +1341,7 @@
                 </div>
 
                 <div class="flex m-auto mx-0">
-                    <ul class="flex gap-[32px]">
+                    <ul class="flex gap-[32px]" itemprop="sameAs">
                         <a class="flex gap-[10px]" href="#">
                             <img src="./image/icon/tg.svg" alt="">
                             <li class="uppercase text-white text-[17px] font-medium">телеграм</li>
@@ -1331,7 +1362,7 @@
 
             <div class="mt-[20px] flex justify-between">
                 <div class="flex gap-[60px]">
-                    <ul class="text-[#dcdcdcf7] text-[17px] font-normal flex flex-col gap-[5px]">
+                    <ul class="text-[#dcdcdcf7] text-[17px] font-normal flex flex-col gap-[5px]" itemprop="significantLinks">
                         <a href="#"><li>Россия</li></a>
                         <a href="#"><li>Новый Уренгой</li></a>
                         <a href="#"><li>Ноябрьск</li></a>
@@ -1342,7 +1373,7 @@
                         <a href="#"><li>Лабытнаги</li></a>
                     </ul>
 
-                    <ul class="text-[#dcdcdcf7] text-[17px] font-normal flex flex-col gap-[5px]">
+                    <ul class="text-[#dcdcdcf7] text-[17px] font-normal flex flex-col gap-[5px]" itemprop="significantLinks">
                         <a href="#"><li>Красноселькупский район</li></a>
                         <a href="#"><li>Надымский район</li></a>
                         <a href="#"><li>Приуральский район</li></a>
@@ -1355,7 +1386,7 @@
 
                 <div class="flex justify-end gap-[60px] mr-[100px]">
                     <div class="flex">
-                        <ul class="text-[#999] text-[17px] font-normal flex flex-col gap-[5px]">
+                        <ul class="text-[#999] text-[17px] font-normal flex flex-col gap-[5px]" itemprop="significantLinks">
                             <a href="#"><li>Экономика</li></a>
                             <a href="#"><li>Происшествия</li></a>
                             <a href="#"><li>Политика</li></a>
@@ -1368,7 +1399,7 @@
                     </div>
     
                     <div class="flex">
-                        <ul class="text-[#999] text-[17px] font-normal flex flex-col gap-[5px]">
+                        <ul class="text-[#999] text-[17px] font-normal flex flex-col gap-[5px]" itemprop="significantLinks">
                             <a href="#"><li>Медицина</li></a>
                             <a href="#"><li>Погода</li></a>
                             <a href="#"><li>Экология</li></a>
@@ -1381,7 +1412,7 @@
                     </div>
     
                     <div class="flex">
-                        <ul class="text-[#999] text-[17px] font-normal flex flex-col gap-[5px]">
+                        <ul class="text-[#999] text-[17px] font-normal flex flex-col gap-[5px]" itemprop="significantLinks">
                             <a href="#"><li>Спецпроекты</li></a>
                             <a href="#"><li>Фоторепортажи</li></a>
                             <a href="#"><li>Видео</li></a>
@@ -1395,7 +1426,7 @@
             </div>
 
             <div class="text-[#999] mt-[40px] flex justify-between align-middle gap-[20px]">
-                <div class="w-[50%]">
+                <div class="w-[50%]" itemprop="copyrightHolder">
                     <p>© 2018-2023 Сетевое издание «Ямал1»</p>    
                     <div class="mt-[32px]"></div>
                     <p>
