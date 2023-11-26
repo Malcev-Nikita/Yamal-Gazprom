@@ -17,7 +17,7 @@
     <script src="./js/lib/swiper-bundle.min.js"></script>
 </head>
 <body>
-    <header>
+    <header itemscope itemtype="http://schema.org/Organization">
         <div class="h-[250px]" style="background: url('./image/img/header_bg.png') no-repeat;">
             <div class="container m-auto pt-[50px]">
                 <img class="w-[282px] h-[135px]" src="./image/icon/logo.svg" alt="">
@@ -97,7 +97,7 @@
         </div>
     </header>
 
-    <section>
+    <article itemscope itemtype="http://schema.org/NewsArticle">
         <div class="container m-auto px-[25%]">
             <div class="flex gap-[12px]">
                 <span class="bg-[#609] uppercase text-[12px] font-medium px-[12px] py-[3px] text-white">
@@ -299,16 +299,20 @@
                 </div>
             </div>
         </div>
-    </section>
 
-    <section class="mt-[50px] mb-[50px]">
+        
+        <meta itemprop="headline" content="ВС разъяснит детали расчета налога на имущество">
+        <meta itemprop="datePublished" content="2023-08-02T10:23:00+00:00">
+    </article>
+
+    <section class="mt-[50px] mb-[50px]" itemscope itemtype="http://schema.org/ItemList">
         <div class="container m-auto">
             <div class="w-[100%] mb-[24px]">
                 <span class="uppercase font-semibold text-[24px]">Читайте также</span>
             </div>
 
             <div class="flex flex-wrap gap-[40px]">
-                <div class="w-[calc(33.3%-40px)]">
+                <div class="w-[calc(33.3%-40px)]" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                     <div class="mb-[14px]">
                         <span class="py-[3px] px-[12px] uppercase text-[12px] font-medium text-white bg-[#ff6600f5]">
                             Спорт
@@ -326,9 +330,11 @@
                     <div class="text-[#999] text-[13px] font-normal mt-[8px]">
                         05 сентября 11:00
                     </div>
+
+                    <meta itemprop="position" content="1">
                 </div>
     
-                <div class="w-[calc(33.3%-40px)]">
+                <div class="w-[calc(33.3%-40px)]" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                     <div class="mb-[14px]">
                         <span class="py-[3px] px-[12px] uppercase text-[12px] font-medium text-white bg-[#999]">
                             Общество
@@ -347,9 +353,11 @@
                     <div class="text-[#999] text-[13px] font-normal mt-[8px]">
                         05 сентября 11:00
                     </div>
+
+                    <meta itemprop="position" content="2">
                 </div>
     
-                <div class="w-[calc(33.3%-40px)]">
+                <div class="w-[calc(33.3%-40px)]" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                     <div class="mb-[14px]">
                         <span class="py-[3px] px-[12px] uppercase text-[12px] font-medium text-white bg-[#999]">
                             Общество
@@ -368,9 +376,11 @@
                     <div class="text-[#999] text-[13px] font-normal mt-[8px]">
                         05 сентября 11:00
                     </div>
+
+                    <meta itemprop="position" content="3">
                 </div>
     
-                <div class="w-[calc(33.3%-40px)]">
+                <div class="w-[calc(33.3%-40px)]" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                     <div class="mb-[14px]">
                         <span class="py-[3px] px-[12px] uppercase text-[12px] font-medium text-white bg-[#036]">
                             Политика
@@ -388,9 +398,11 @@
                     <div class="text-[#999] text-[13px] font-normal mt-[8px]">
                         05 сентября 11:00
                     </div>
+
+                    <meta itemprop="position" content="4">
                 </div>
     
-                <div class="w-[calc(33.3%-40px)]">
+                <div class="w-[calc(33.3%-40px)]" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                     <div class="mb-[14px]">
                         <span class="py-[3px] px-[12px] uppercase text-[12px] font-medium text-white bg-[#093]">
                             Экология
@@ -409,9 +421,11 @@
                     <div class="text-[#999] text-[13px] font-normal mt-[8px]">
                         05 сентября 11:00
                     </div>
+
+                    <meta itemprop="position" content="5">
                 </div>
     
-                <div class="w-[calc(33.3%-40px)]">
+                <div class="w-[calc(33.3%-40px)]" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                     <div class="mb-[14px]">
                         <span class="py-[3px] px-[12px] uppercase text-[12px] font-medium text-white bg-[#609]">
                             Культура
@@ -429,87 +443,103 @@
                     <div class="text-[#999] text-[13px] font-normal mt-[8px]">
                         05 сентября 11:00
                     </div>
+
+                    <meta itemprop="position" content="6">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-[32px] pb-[60px]">
+    <section class="py-[32px] pb-[60px]" itemscope itemtype="http://schema.org/ItemList">
         <div class="container m-auto">
             <div class="flex gap-[6px]">
                 <img class="m-auto mx-0" src="./image/icon/smi24.svg" alt="">
                 <p class="m-auto font-semibold text-[18px] mx-0" >24СМИ</p>
             </div>
 
-            <div class="swiper swiper_news24 mt-[20px]">
+            <div class="swiper swiper_news24 mt-[20px]" itemprop="itemListElement">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]">
+                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                         <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-1.png" alt="">
 
                         <div class="text-[16px] font-medium px-[20px]">
                             По делу Блиновской арестовали активы на 64 миллиарда рублей
                         </div>
+
+                        <meta itemprop="position" content="1">
                     </div>
 
-                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]">
+                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                         <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-2.png" alt="">
 
                         <div class="text-[16px] font-medium px-[20px]">
                             В НАТО допустили обмен территорий Украины на членство в альянсе
                         </div>
+
+                        <meta itemprop="position" content="2">
                     </div>
 
-                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]">
+                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                         <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-3.png" alt="">
 
                         <div class="text-[16px] font-medium px-[20px]">
                             В Грузии освистали группу The Killers за приглашение на сцену барабанщика из России
                         </div>
+
+                        <meta itemprop="position" content="3">
                     </div>
 
-                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]">
+                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                         <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-4.png" alt="">
 
                         <div class="text-[16px] font-medium px-[20px]">
                             Минобороны: ВС РФ перехватили четыре крылатых ракеты большой дальности SCALP-EG
                         </div>
+
+                        <meta itemprop="position" content="4">
                     </div>
 
-                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]">
+                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                         <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-5.png" alt="">
 
                         <div class="text-[16px] font-medium px-[20px]">
                             Средства ПВО сбили три беспилотника над Калужской областью
                         </div>
+
+                        <meta itemprop="position" content="5">
                     </div>
 
-                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]">
+                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                         <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-6.png" alt="">
 
                         <div class="text-[16px] font-medium px-[20px]">
                             Что будет с рублем, вкладами и кредитами после повышения ключевой ставки до 12%
                         </div>
+
+                        <meta itemprop="position" content="6">
                     </div>
                     
-                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]">
+                    <div class="swiper-slide h-[320px] border-[2px] border-[#00000020] shadow-[0px_6px_24px_-4px_rgba(0,0,0,0.12)] mx-[10px]" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                         <img class="w-[100%] aspect-video mb-[18px]" src="./image/img/news24/bg-6.png" alt="">
 
                         <div class="text-[16px] font-medium px-[20px]">
                             Что будет с рублем, вкладами и кредитами после повышения ключевой ставки до 12%
                         </div>
+
+                        <meta itemprop="position" content="7">
                     </div>
                   </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-[#232323] py-[40px]">
+    <footer class="bg-[#232323] py-[40px]" itemscope itemtype="http://schema.org/WebPage">
         <div class="container m-auto">
             <div class="flex justify-between">
                 <div class="flex gap-[32px]">
                     <img src="./image/icon/logo_footer.png" alt="">
-
-                    <ul class="flex gap-[32px] m-auto mx-0">
+ 
+                    <ul class="flex gap-[32px] m-auto mx-0" itemprop="about">
                         <a class="text-white" href="#"><li class="uppercase text-[17px] font-medium">Редакция</li></a>
                         <a class="text-white" href="#"><li class="uppercase text-[17px] font-medium">Вакансии</li></a>
                         <a class="text-white" href="#"><li class="uppercase text-[17px] font-medium">Реклама</li></a>
@@ -519,7 +549,7 @@
                 </div>
 
                 <div class="flex m-auto mx-0">
-                    <ul class="flex gap-[32px]">
+                    <ul class="flex gap-[32px]" itemprop="sameAs">
                         <a class="flex gap-[10px]" href="#">
                             <img src="./image/icon/tg.svg" alt="">
                             <li class="uppercase text-white text-[17px] font-medium">телеграм</li>
@@ -540,7 +570,7 @@
 
             <div class="mt-[20px] flex justify-between">
                 <div class="flex gap-[60px]">
-                    <ul class="text-[#dcdcdcf7] text-[17px] font-normal flex flex-col gap-[5px]">
+                    <ul class="text-[#dcdcdcf7] text-[17px] font-normal flex flex-col gap-[5px]" itemprop="significantLinks">
                         <a href="#"><li>Россия</li></a>
                         <a href="#"><li>Новый Уренгой</li></a>
                         <a href="#"><li>Ноябрьск</li></a>
@@ -551,7 +581,7 @@
                         <a href="#"><li>Лабытнаги</li></a>
                     </ul>
 
-                    <ul class="text-[#dcdcdcf7] text-[17px] font-normal flex flex-col gap-[5px]">
+                    <ul class="text-[#dcdcdcf7] text-[17px] font-normal flex flex-col gap-[5px]" itemprop="significantLinks">
                         <a href="#"><li>Красноселькупский район</li></a>
                         <a href="#"><li>Надымский район</li></a>
                         <a href="#"><li>Приуральский район</li></a>
@@ -564,7 +594,7 @@
 
                 <div class="flex justify-end gap-[60px] mr-[100px]">
                     <div class="flex">
-                        <ul class="text-[#999] text-[17px] font-normal flex flex-col gap-[5px]">
+                        <ul class="text-[#999] text-[17px] font-normal flex flex-col gap-[5px]" itemprop="significantLinks">
                             <a href="#"><li>Экономика</li></a>
                             <a href="#"><li>Происшествия</li></a>
                             <a href="#"><li>Политика</li></a>
@@ -577,7 +607,7 @@
                     </div>
     
                     <div class="flex">
-                        <ul class="text-[#999] text-[17px] font-normal flex flex-col gap-[5px]">
+                        <ul class="text-[#999] text-[17px] font-normal flex flex-col gap-[5px]" itemprop="significantLinks">
                             <a href="#"><li>Медицина</li></a>
                             <a href="#"><li>Погода</li></a>
                             <a href="#"><li>Экология</li></a>
@@ -590,7 +620,7 @@
                     </div>
     
                     <div class="flex">
-                        <ul class="text-[#999] text-[17px] font-normal flex flex-col gap-[5px]">
+                        <ul class="text-[#999] text-[17px] font-normal flex flex-col gap-[5px]" itemprop="significantLinks">
                             <a href="#"><li>Спецпроекты</li></a>
                             <a href="#"><li>Фоторепортажи</li></a>
                             <a href="#"><li>Видео</li></a>
@@ -604,7 +634,7 @@
             </div>
 
             <div class="text-[#999] mt-[40px] flex justify-between align-middle gap-[20px]">
-                <div class="w-[50%]">
+                <div class="w-[50%]" itemprop="copyrightHolder">
                     <p>© 2018-2023 Сетевое издание «Ямал1»</p>    
                     <div class="mt-[32px]"></div>
                     <p>
