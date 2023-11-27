@@ -1,5 +1,9 @@
 @import './fonts.css';
 
+html {
+    font-family: "Graphik LCG", sans-serif;
+}
+
 .swiper-button-next:after, .swiper-button-prev:after {
     width: 44px;
     height: 44px;
